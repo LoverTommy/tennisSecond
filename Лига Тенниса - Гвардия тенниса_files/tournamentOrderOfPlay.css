@@ -1,0 +1,52 @@
+.filters .matchTypes h4:hover {
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.courts {
+    padding-top: 50px;
+}
+
+.courts .courtsWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.courts .courtsWrapper .court {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.courts .courtsWrapper .court .courtTitle {
+    margin-bottom: 10px;
+    background-color: #7814ff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.courts .courtsWrapper .court .courtTitle h4 {
+    color: white;
+}
+
+.courts .courtsWrapper .court .courtTitle p {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.courts .courtsWrapper .court .courtTitle p span {
+    color: white;
+}
+
+.courts .Day2Courts,
+.courts .Day3Courts,
+.courts .Day4Courts,
+.courts .Day5Courts,
+.courts .Day6Courts,
+.courts .Day7Courts {
+    display: none;
+}

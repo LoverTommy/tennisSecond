@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.tournamentWrapper {
+    padding-top: 120px;
+}
+
+.tournamentWrapper .tournamentDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgba(23, 0, 33, 0.05);
+    background: #FFF;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 30px;
+}
+
+.tournamentWrapper .tournamentDescription .tournamentTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    background-color: #7814ff;
+    padding: 20px 0px;
+}
+
+.tournamentWrapper .tournamentDescription .tournamentTitle h1 {
+    color: white;
+}
+
+.tournamentWrapper .tournamentDescription .tournamentTitle p {
+    color: white;
+}
+
+.tournamentWrapper .tournamentDescription .tournamentImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tournamentWrapper .tournamentDescription .tournamentImage img {
+    width: 400px;
+    height: 500px;
+}
+
+.tournamentWrapper .tournamentFilter {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #141414;
+    gap: 40px;
+}
+
+.tournamentWrapper .tournamentFilter .filterItem {
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.tournamentWrapper .tournamentFilter .filterItem a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.658);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tournamentWrapper .tournamentFilter .filterItem .stroke {
+    background-color: #7814ff;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    animation-fill-mode: forwards;
+}
+
+.tournamentWrapper .tournamentFilter .activeFilterItem .stroke {
+    width: 100%;
+}
+
+/* torunamentScoresFilters */
+
+.filters {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 0px 20px 50px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.filters .topFilters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.filters .topFilters .stroke {
+    height: 40px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+.filters .yearFilter {
+    position: relative;
+}
+
+.filters .yearFilter .activeYearWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 15px 5px;
+}
+
+.filters .yearFilter .activeYearWrapper h4 {
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.548);
+    transition: 0.6s;
+}
+
+.filters .yearFilter .activeYearWrapper h4:hover {
+    color: #141414;
+}
+
+.filters .yearFilter .customSelectYears {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 14px;    
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
+    width: 300px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.filters .yearFilter .customSelectYears .yearOption {
+    font-family: 'montserrat';
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px #e6e6e6 solid;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.filters .yearFilter .customSelectYears .yearOption:hover {
+    color: #7814ff;
+}
+
+.filters .yearFilter .customSelectYears .yearOption svg {
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+.filters .yearFilter .customSelectYears::-webkit-scrollbar {
+    background-color: #e6e6e6;
+    width: 5px;
+}
+
+.filters .yearFilter .customSelectYears::-webkit-scrollbar-thumb {
+    background-color: #7814ff;
+    border-radius: 10px;
+}
+
+.filters .yearFilter .customSelectYears .yearOptionActive {
+    color: #7814ff;
+}
+
+.filters .yearFilter .customSelectYears .yearOptionActive svg {
+    display: block;
+    fill: #7814ff;
+}
+
+
+.filters .middleStroke {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.filters .matchTypes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters .matchTypes h4 {
+    padding: 15px 5px;
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.filters .matchTypes .matchTypeActive {
+    position: relative;
+    color: #141414;
+}
+
+.filters .matchTypes .matchTypeActive::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #7814ff;
+    bottom: 0;
+    left: 0;
+}
+
+.filters .matchTypes h4:hover {
+    color: #141414;
+}
+
+.filters .matchDays {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+}
+
+.filters .matchDays .matchDayButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 2px rgba(0, 0, 0, .06) solid;
+    border-radius: 50%;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
+    background-color: white;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.filters .matchDays .matchDayButton:hover {
+    border: 2px #7814ff solid;
+}
+
+.filters .matchDays .matchDayButtonActive {
+    border: 2px #7814ff solid;
+}
+
+.filters .matchDays .matchDayButton span {
+    font-family: 'montserrat';
+    font-size: 15px;
+}
+
+.filters .matchDays .matchDayButton h4 {
+    font-family: 'montserrat';
+    font-size: 24px;
+}
+
+.matches {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+    padding-top: 30px;
+}
+
+#matchesListDouble,
+#matchesListMixed,
+#matchesListDay2,
+#matchesListDay3,
+#matchesListDay4,
+#matchesListDay5,
+#matchesListDay6,
+#matchesListDay7 {
+    display: none;
+}
+
+/* torunamentScoresFilters */
+
+/* matchItemSingle */
+
+.matchItem h4 {
+    font-family: 'montserrat';
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.matchItem h4 a {
+    text-decoration: none;
+}
+
+.matchItem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px rgba(23, 0, 33, 0.05);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    padding: 15px 10px;
+    width: 433px;
+}
+
+.matchItem .peoples {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-right: 5px;
+}
+
+.matchItem .peoples .people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.matchItem .peoples .people span {
+    font-family: 'montserrat';
+    font-size: 12px;
+}
+
+.matchItem .peoples .people img {
+    width: 10px;
+    height: 12px;
+}
+
+.matchItem .peoples .peopleDouble .doublePeoples {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.matchItem .peoples .people .statistic span {
+    font-weight: 500;
+}
+
+.matchItem .peoples .people .statistic {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.matchItem .rules {
+    display: flex;
+    justify-content: space-between;
+}
+
+.matchItem .rules span {
+    font-family: 'montserrat';
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* matchItemSingle */
+
+@keyframes filterStrokeShow {
+    from{
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes filterStrokeHide {
+    from{
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
