@@ -1,0 +1,129 @@
+.tournamentPastWinners {
+    padding-top: 50px;
+}
+
+.pastWinnersList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pastWinnersList .pastWinner {
+    display: flex;
+    height: 140px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+.pastWinnersList .pastWinner .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    height: 100%;
+    width: 160px;
+    background-color: #7814ff;
+}
+
+.pastWinnersList .pastWinner .date h4 {
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+}
+
+.pastWinnersList .pastWinner .date p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pastWinnersList .pastWinner .winPlayers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 30px;
+}
+
+.pastWinnersList .pastWinner .winPlayers .topWinner {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.pastWinnersList .pastWinner .winPlayers .topWinner img {
+    width: 40px;
+    height: 25px;
+}
+
+.pastWinnersList .pastWinner .winPlayers .topWinner h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.pastWinnersList .pastWinner .winPlayers .topWinner h4 span {
+    color: rgba(0, 0, 0, 0.452);
+    text-transform: none;
+    padding-right: 5px;
+}
+
+.pastWinnersList .pastWinner .winPlayers .bottomWinner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner,
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner  {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner img,
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner img {
+    width: 40px;
+    height: 25px;
+}
+
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner h4,
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner h4 span,
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner h4 span {
+    color: rgba(0, 0, 0, 0.452);
+    text-transform: none;
+    padding-right: 5px;
+}
+
+.pastWinnersList .pastWinner .winPlayers .bottomWinner .stroke {
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.pastWinnersList .pastWinner .matchButtonInfo {
+    margin-left: auto;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pastWinnersList .pastWinner .matchButtonInfo span {
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}

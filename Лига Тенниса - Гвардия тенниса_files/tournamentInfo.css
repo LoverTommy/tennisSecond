@@ -54,6 +54,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .tournamentWrapper .tournamentDescription .tournamentImage img {
@@ -64,7 +65,7 @@
 .tournamentWrapper .tournamentFilter {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #141414;
     gap: 40px;
 }
@@ -323,6 +324,21 @@
     text-decoration: none;
 }
 
+.matchItem .matchTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.matchItem .matchTitle span {
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 14px;
+}
+
+.matchItem .matchTitle h4 span {
+    color: dodgerblue;
+}
+
 .matchItem {
     display: flex;
     flex-direction: column;
@@ -375,6 +391,27 @@
 .matchItem .rules {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.matchItem .rules a {
+    display: flex;
+    gap: 5px;
+}
+
+.matchItem .rules a hr {
+    width: 1px;
+    height: 20px;
+    border: none;
+    background-color: dodgerblue;
+    align-items: center;
+}
+
+.matchItem .rules a span {
+    color: dodgerblue;
+    font-size: 15px;
+    font-weight: 400;
+    align-self: flex-end;
 }
 
 .matchItem .rules span {

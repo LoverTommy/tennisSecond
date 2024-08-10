@@ -1,0 +1,137 @@
+.list {
+    padding-top: 50px;
+}
+
+.list .listWrapper .playerItem {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
+    width: 250px;
+    border-radius: 32px 32px 16px 16px;
+}
+
+.list .listWrapper .playerItem .image {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.082);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.list .listWrapper .playerItem .image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 5px rgba(0, 0, 0, 0.301) solid;
+}
+
+.list .listWrapper .playerItemDouble .image img {
+    width: 100px;
+    height: 100px;
+}
+
+.list .listWrapper .playerItemDouble .image {
+    gap: 5px;
+}
+
+.list .listWrapper .playerItemDouble .descriptionPlayer {
+    align-items: start !important;
+    gap: 20px !important;
+}
+
+.list .listWrapper .playerItemDouble .descriptionPlayer .playerItem-player {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.list .listWrapper .playerItemDouble .descriptionPlayer .playerItem-player h4 {
+    flex-direction: row;
+    gap: 5px;
+}
+
+.list .listWrapper .playerItemDouble .descriptionPlayer .playerItem-player .country p {
+    margin-left: 80px;
+}
+
+.list .listWrapper .playerItem .descriptionPlayer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    align-items: center;
+}
+
+.list .listWrapper .playerItem .descriptionPlayer h4 {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    align-items: center;
+}
+
+.list .listWrapper .playerItem .descriptionPlayer h4 span {
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 18px;
+}
+
+.list .listWrapper .playerItem .descriptionPlayer .country {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.list .listWrapper .playerItem .descriptionPlayer .country img {
+    width: 32px;
+    height: 20px;
+}
+
+.list .listWrapper .playerItem .descriptionPlayer .country span {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.list .listWrapper .playerItem .descriptionPlayer .country p {
+    color: rgb(172, 4, 4);
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.list .listWrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.filters {
+    padding: 0px 20px 0px 20px;
+}
+
+.filterPlayers {
+    padding-top: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.filterPlayers span {
+    padding: 5px 10px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.164);
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#doubleList,
+#mixedList {
+    display: none;
+}

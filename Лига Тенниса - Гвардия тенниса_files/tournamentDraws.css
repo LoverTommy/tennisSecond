@@ -1,0 +1,200 @@
+.drawsWrapper {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.drawsWrapper * {
+    user-select: none;
+}
+
+.tableWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.matchItem .peoples {
+    gap: 0;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.matchItem {
+    border: 1px rgba(0, 0, 0, 0.089) solid;
+    background-color: white;
+    min-height: 102px;
+    max-height: 102px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.tableWrapper .roundName {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableWrapper .roundOf32 {
+    gap: 50px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(2) {
+    margin-top: 111px;
+}
+
+
+.tableWrapper .roundOf16 .matchItem:nth-child(3) {
+    margin-top: 170px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(4) {
+    margin-top: 172px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(5) {
+    margin-top: 175px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(6) {
+    margin-top: 170px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(7) {
+    margin-top: 170px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(8) {
+    margin-top: 174px;
+}
+
+.tableWrapper .roundOf16 .matchItem:nth-child(9) {
+    margin-top: 170px;
+}
+
+.tableWrapper .quarterfinals .matchItem:nth-child(2) {
+    margin-top: 250px;
+}
+
+.tableWrapper .quarterfinals .matchItem:nth-child(3) {
+    margin-top: 445px;
+}
+
+.tableWrapper .quarterfinals .matchItem:nth-child(4) {
+    margin-top: 445px;
+}
+
+.tableWrapper .quarterfinals .matchItem:nth-child(5) {
+    margin-top: 445px;
+}
+
+.tableWrapper .semiFinal .matchItem:nth-child(2) {
+    margin-top: 530px;
+}
+
+.tableWrapper .semiFinal .matchItem:nth-child(3) {
+    margin-top: 1020px;
+}
+
+.tableWrapper .final .matchItem {
+    margin-top: 1100px;
+}
+
+.tableWrapper .roundName {
+    background-color: rgba(77, 74, 74, 0.041);
+}
+
+.pairMatches {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.columnTitle {
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.columnTitle h4 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.columnTitle span {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.466);
+}
+
+.filters {
+    padding: 0px 20px 20px 20px;
+}
+
+.drawsCategory {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+.drawsCategory h4 {
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 15px 5px;
+}
+
+.drawsCategory h4:hover {
+    color: #141414;
+}
+
+.drawsCategory .activeCategory {
+    position: relative;
+    color: #141414;
+}
+
+.drawsCategory .activeCategory::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #7814ff;
+    bottom: 0;
+    left: 0;
+}
+
+.drawsCategory h4 .stroke {
+    background-color: #7814ff;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    animation-fill-mode: forwards;
+}
+
+.drawsCategory .activeCategory .stroke {
+    width: 100%;
+}
+
+
+#category2Table,
+#category3Table,
+#drawsDouble,
+#drawsMixed {
+    display: none;
+}
+
+.matchItem .peoples .peopleDouble .doublePeoples {
+    gap: 2px;
+}
