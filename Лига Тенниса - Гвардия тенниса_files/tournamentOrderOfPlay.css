@@ -50,3 +50,29 @@
 .courts .Day7Courts {
     display: none;
 }
+
+
+
+@media screen and (max-width: 1450px) {
+    .courts .courtsWrapper {
+        flex-direction: column;
+    }
+
+    .courts .courtsWrapper .court  {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .courts .courtsWrapper .court .courtTitle {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .courts .courtsWrapper .court .courtTitle h4,
+    .courts .courtsWrapper .court .courtTitle p {
+        font-size: 12px;
+    }
+}

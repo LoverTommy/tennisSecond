@@ -198,3 +198,45 @@
 .matchItem .peoples .peopleDouble .doublePeoples {
     gap: 2px;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .matchItem {
+        width: 433px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .drawsCategory {
+        gap: 20px;
+    }
+
+    .drawsCategory h4 {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .drawsCategory h4 {
+        padding: 5px 5px 10px 5px;
+    }
+
+    .drawsCategory .activeCategory::after {
+        height: 2px;
+    }
+
+    .drawsCategory {
+        padding-top: 10px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .matchItem {
+        width: 300px;
+    }
+}

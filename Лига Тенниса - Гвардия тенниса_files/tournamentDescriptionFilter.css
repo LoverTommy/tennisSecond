@@ -91,3 +91,107 @@
     object-fit: cover;
     border-radius: 12px;
 }
+
+
+/* mobile */
+
+@media screen and (max-width: 1450px) {
+    .wrapper {
+        max-width: 95%;
+    }
+
+    .tournamentDescriptionFilter .lastNews {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tournamentDescriptionFilter {
+        padding-top: 30px;
+    }
+
+    .tournamentDescriptionFilter .descriptionTable {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tournamentDescriptionFilter .lastNews .newsItem {
+        width: 45%;
+    }
+
+    .tournamentDescriptionFilter .lastNews {
+        gap: 5%;
+        row-gap: 30px;
+    }
+
+    .tournamentDescriptionFilter .lastNews .newsItem img {
+        height: 30vw;
+    }
+
+    .tournamentDescriptionFilter .lastNews .newsItem p {
+        max-height: 8rem;
+        -webkit-box-orient: vertical;
+        display: block;
+        display: -webkit-box;
+        overflow: hidden!important;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        font-size: 14px;
+    }
+
+    .tournamentDescriptionFilter .partners {
+        justify-content: center;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    .tournamentDescriptionFilter .descriptionTable {
+        padding: 20px 20px;
+        gap: 8px;
+    }
+
+    .tournamentDescriptionFilter .descriptionTable div h4 {
+        font-size: 14px;
+    }
+
+    .tournamentDescriptionFilter .descriptionTable div span {
+        font-size: 14px;
+    }
+
+    .tournamentDescriptionFilter .lastNews h2,
+    .tournamentDescriptionFilter .partners h2 {
+        font-size: 26px;
+    }
+
+    .tournamentDescriptionFilter .lastNews .newsItem {
+        width: 100%;
+    }
+
+    .tournamentDescriptionFilter .lastNews .newsItem img {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tournamentWrapper .tournamentDescription .tournamentImage {
+        padding-top: 10px;
+    }
+
+    .tournamentWrapper .tournamentDescription .tournamentTitle h1 {
+        font-size: 20px;
+    }
+
+    .tournamentWrapper .tournamentDescription .tournamentTitle p {
+        font-size: 14px;
+    }
+
+    .tournamentWrapper .tournamentDescription .tournamentImage img {
+        width: 100%;
+        height: 100vw;
+    }
+}

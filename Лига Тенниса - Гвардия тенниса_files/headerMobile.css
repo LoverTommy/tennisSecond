@@ -1,8 +1,11 @@
 
 @media screen and (max-width: 1450px) {
     header {
-        width: 98%;
-        padding: 20px 10px;
+        max-width: 95%;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px 15px;
     }
 
     .center {
@@ -12,19 +15,12 @@
 
 
 @media screen and (max-width: 1200px) {
-    header .menu {
-        justify-content: space-around;
-        width: 70%;
-    }
+
 }
 
 @media screen and (max-width: 890px) {
     header .menu a {
         font-size: 12px;
-    }
-
-    header .menu {
-        justify-content: space-between;
     }
 
     header .right img {

@@ -135,3 +135,70 @@
 #mixedList {
     display: none;
 }
+
+
+@media screen and (max-width: 600px) {
+    .list .listWrapper {
+        gap: 0;
+        column-gap: 5%;
+        row-gap: 30px;
+    }
+
+    .list .listWrapper .playerItem {
+        width: 45%;
+    }
+
+    .list .listWrapper .playerItem .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .list .listWrapper .playerItem .descriptionPlayer h4 {
+        font-size: 16px;
+    }
+
+    .list .listWrapper .playerItem .descriptionPlayer h4 span {
+        font-size: 14px;
+    }
+
+    .list .listWrapper .playerItem .descriptionPlayer {
+        padding: 8px 8px 16px 8px;
+    }
+
+    .list .listWrapper .playerItemDouble .descriptionPlayer .playerItem-player .country p {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list .listWrapper .playerItem {
+        width: 100%;
+    }
+
+    .list .listWrapper .playerItem .descriptionPlayer {
+        padding: 16px 8px 40px 8px;
+    }
+
+    .list .listWrapper .playerItemDouble .descriptionPlayer .playerItem-player .country p {
+        margin-left: auto;
+    }
+
+    .list .listWrapper .playerItem .descriptionPlayer .country {
+        width: 100%;
+    }
+
+    .filterPlayers span {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .filterPlayers {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .list {
+        padding-top: 30px;
+    }
+}
