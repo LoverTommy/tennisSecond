@@ -6,13 +6,123 @@
     scrollbar-width: none;
 }
 
+.wr {
+    display: flex;
+}
+
 .drawsWrapper * {
     user-select: none;
 }
 
+.afterMatch {
+    height: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.afterMatchDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Montserrat';
+    width: max-content;
+}
+
+.afterMatchDescription .top {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.afterMatchDescription .top h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.afterMatchDescription .top h4:last-child {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.afterMatchDescription .top img {
+    width: 20px;
+    height: 20px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(1) {
+    margin-top: 195px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(2) {
+    margin-top: 220px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(3) {
+    margin-top: 225px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(4) {
+    margin-top: 230px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(5) {
+    margin-top: 225px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(6) {
+    margin-top: 225px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(7) {
+    margin-top: 225px;
+}
+
+.afterMatch32 .afterMatchDescription:nth-child(8) {
+    margin-top: 230px;
+}
+
+.afterMatch16 .afterMatchDescription:nth-child(1) {
+    margin-top: 335px;
+}
+
+.afterMatch16 .afterMatchDescription:nth-child(2) {
+    margin-top: 500px;
+}
+
+.afterMatch16 .afterMatchDescription:nth-child(3) {
+    margin-top: 495px;
+}
+
+.afterMatch16 .afterMatchDescription:nth-child(4) {
+    margin-top: 500px;
+}
+
+.afterMatchQuarter .afterMatchDescription:nth-child(1) {
+    margin-top: 610px;
+}
+
+.afterMatchQuarter .afterMatchDescription:nth-child(2) {
+    margin-top: 1075px;
+}
+
+.afterMatchSemi .afterMatchDescription:nth-child(1) {
+    margin-top: 1180px;
+}
+
 .tableWrapper {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tableWrapper h4:first-child {
+    font-family: 'Montserrat';
+    font-size: 20px;
 }
 
 .matchItem .peoples {
@@ -199,6 +309,11 @@
     gap: 2px;
 }
 
+.rightScroll,
+.leftScroll {
+    display: none;
+}
+
 
 @media screen and (max-width: 1000px) {
     .matchItem {
@@ -237,6 +352,39 @@
     }
 
     .matchItem {
-        width: 300px;
+        width: 90vw;
+    }
+
+    .leftScroll,
+    .rightScroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.116);
+        position: fixed;
+        top: 50vh;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .leftScroll img,
+    .rightScroll img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .leftScroll img {
+        transform: rotate(180deg);
+    }
+
+    .rightScroll {
+        right: 10px;
+    }
+
+    .leftScroll {
+        left: 10px;
     }
 }

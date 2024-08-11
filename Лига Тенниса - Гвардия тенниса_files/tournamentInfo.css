@@ -54,12 +54,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .tournamentWrapper .tournamentDescription .tournamentImage img {
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 32px 32px;
 }
 
 .tournamentWrapper .tournamentFilter {
@@ -370,7 +372,7 @@
 
 .matchItem .peoples .people img {
     width: 10px;
-    height: 12px;
+    height: 10px;
 }
 
 .matchItem .peoples .peopleDouble .doublePeoples {
@@ -397,15 +399,13 @@
 
 .matchItem .rules a {
     display: flex;
-    gap: 5px;
+    align-items: center;
 }
 
-.matchItem .rules a hr {
-    width: 1px;
-    height: 20px;
-    border: none;
-    background-color: dodgerblue;
-    align-items: center;
+.matchItem .rules a img {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
 }
 
 .matchItem .rules a span {
@@ -511,11 +511,20 @@
     .filters .matchTypes h4 {
         font-size: 16px;
     }
+
+    .tournamentWrapper .tournamentDescription .tournamentImage {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .tournamentWrapper .tournamentFilter .filterItem a {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .tournamentWrapper .tournamentFilter {
+        gap: 10px;
+        row-gap: 0;
     }
 
     .tournamentWrapper .tournamentFilter .filterItem .stroke {
