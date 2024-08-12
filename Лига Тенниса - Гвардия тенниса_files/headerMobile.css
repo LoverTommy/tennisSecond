@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 890px) {
     header .menu a {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     header .right img {
@@ -29,8 +29,8 @@
     }
 
     header .logo {
-        width: 60px;
-        height: 40px;
+        width: 100px;
+        height: 60px;
     }
 }
 

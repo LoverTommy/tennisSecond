@@ -8,6 +8,7 @@
 
 .wr {
     display: flex;
+    gap: 20px;
 }
 
 .drawsWrapper * {
@@ -25,8 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-family: 'Montserrat';
-    width: max-content;
+    font-family: 'Montserrat';  
 }
 
 .afterMatchDescription .top {
@@ -333,6 +333,32 @@
 
     .wrapper {
         padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .filters .topFilters {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+
+    .filters .topFilters .stroke:nth-child(2) {
+        width: 100%;
+        height: 2px;
+    }
+
+    .filters .matchTypes .stroke {
+        display: none;
+    }
+
+    .filters .matchTypes {
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+
+    .filters .matchTypes h4 {
+        padding: 5px 5px 10px 5px;
     }
 }
 

@@ -1,185 +1,80 @@
+.descriptionTable {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.descriptionTable div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descriptionTable div span {
+    color: black;
+}
+
 .tournamentPastWinners {
     padding-top: 50px;
 }
 
-.pastWinnersList {
+.tournamentPastWinners .pastWinnersList {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
-.pastWinnersList .pastWinner {
+.tournamentPastWinners .pastWinnersList .pastWinner {
     display: flex;
-    height: 140px;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.096);
-}
-
-.pastWinnersList .pastWinner .date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 2px;
-    height: 100%;
-    width: 160px;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
+    border-radius: 24px;
+    padding: 32px;
+}
+
+.tournamentPastWinners .pastWinnersList .pastWinner .titleWinners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tournamentPastWinners .pastWinnersList .pastWinner .titleWinners .name {
+    width: 180px;
+    height: 180px;
     background-color: #7814ff;
-}
-
-.pastWinnersList .pastWinner .date h4 {
-    font-size: 36px;
-    font-weight: 800;
-    color: white;
-}
-
-.pastWinnersList .pastWinner .date p {
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.pastWinnersList .pastWinner .winPlayers {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 40px;
-    padding: 0px 30px;
-}
-
-.pastWinnersList .pastWinner .winPlayers .topWinner {
-    display: flex;
-    gap: 5px;
     align-items: center;
+    background-image: url('./Рождественские\ звезды.jpg');
+    background-size: cover;
 }
 
-.pastWinnersList .pastWinner .winPlayers .topWinner img {
-    width: 40px;
-    height: 25px;
-}
-
-.pastWinnersList .pastWinner .winPlayers .topWinner h4 {
+.tournamentPastWinners .pastWinnersList .pastWinner .titleWinners .name h4 {
+    font-size: 24px;
     color: black;
-    font-size: 20px;
     font-weight: 800;
-    text-transform: uppercase;
+    width: max-content;
+    text-align: center;
 }
 
-.pastWinnersList .pastWinner .winPlayers .topWinner h4 span {
-    color: rgba(0, 0, 0, 0.452);
-    text-transform: none;
-    padding-right: 5px;
-}
-
-.pastWinnersList .pastWinner .winPlayers .bottomWinner {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner,
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner  {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner img,
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner img {
-    width: 40px;
-    height: 25px;
-}
-
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner h4,
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner h4 {
-    color: black;
-    font-size: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner h4 span,
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner h4 span {
-    color: rgba(0, 0, 0, 0.452);
-    text-transform: none;
-    padding-right: 5px;
-}
-
-.pastWinnersList .pastWinner .winPlayers .bottomWinner .stroke {
-    font-size: 25px;
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.452);
-}
-
-.pastWinnersList .pastWinner .matchButtonInfo {
-    margin-left: auto;
-    padding: 0px 30px;
+.matchButtonInfo {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
-.pastWinnersList .pastWinner .matchButtonInfo span {
-    padding: 12px 30px;
+.matchButtonInfo span {
+    padding: 12px 32px;
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     cursor: pointer;
 }
 
 
-
-@media screen and (max-width: 1000px) {
-    .pastWinnersList .pastWinner {
-        flex-wrap: wrap;
-        align-items: start;
-        height: max-content;
-    }
-
-    .pastWinnersList .pastWinner .date {
-        width: 100%;
-        padding: 20px 0px;
-    }
-
-    .pastWinnersList .pastWinner .winPlayers {
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .pastWinnersList .pastWinner .matchButtonInfo {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .pastWinnersList .pastWinner .matchButtonInfo {
-        width: 100%;
-    }
-
-    .pastWinnersList .pastWinner .winPlayers .bottomWinner .leftWinner h4, 
-    .pastWinnersList .pastWinner .winPlayers .bottomWinner .rightWinner h4,
-    .pastWinnersList .pastWinner .winPlayers .topWinner h4 {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .pastWinnersList .pastWinner .winPlayers .bottomWinner {
-        flex-direction: column;
-        align-items: start;
-        gap: 5px;
-    }
-
-    .pastWinnersList .pastWinner .winPlayers .bottomWinner .stroke {
-        font-size: 16px;
-    }
-
-    .pastWinnersList .pastWinner .date h4 {
-        font-size: 24px;
-    }
-
-    .pastWinnersList .pastWinner .date {
-        padding: 10px 0px;
-    }
-}

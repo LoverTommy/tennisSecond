@@ -60,6 +60,18 @@
     color: #141414 !important;
 }
 
+.matchItem .matchTitle h4 {
+    font-size: 10px;
+}
+
+.matchItem .matchTitle h4 span {
+    font-size: 10px;
+}
+
+.matchItem .matchTitle span {
+    font-size: 11px;
+}
+
 
 @media screen and (max-width: 1450px) {
     .courts .courtsWrapper {
@@ -76,11 +88,56 @@
         margin-bottom: 0;
         width: 100%;
     }
+
+    .matchItem {
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .filters .topFilters {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .filters .topFilters .stroke:nth-child(2) {
+        width: 100%;
+        height: 2px;
+    }
+
+    .filters .topFilters .matchTypes .stroke {
+        height: 40px;
+        width: 2px;
+    }
+    
+    .filters .topFilters .matchTypes {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .courts .courtsWrapper .court .courtTitle h4,
     .courts .courtsWrapper .court .courtTitle p {
         font-size: 12px;
+    }
+
+    .filters .matchTypes h4 {
+        font-size: 14px;
+    }
+
+    .matchItem {
+        width: 100%;
+    }
+
+    .matchItem .matchTitle h4 {
+        font-size: 14px;
+    }
+    
+    .matchItem .matchTitle h4 span {
+        font-size: 14px;
+    }
+    
+    .matchItem .matchTitle span {
+        font-size: 14px;
     }
 }
