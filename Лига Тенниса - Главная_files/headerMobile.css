@@ -5,10 +5,19 @@
         box-sizing: border-box;
         margin: 0 auto;
         padding: 20px 15px;
+        left: 0;
     }
 
     .center {
         max-width: 98%;
+    }
+
+    header .logo {
+        margin-left: 20px;
+    }
+
+    header .right {
+        margin-right: 20px;
     }
 } 
 
@@ -18,9 +27,6 @@
         justify-content: center !important;
     }
 
-    header {
-        padding: 0px 20px !important;
-    }
 }
 
 @media screen and (max-width: 890px) {
@@ -51,6 +57,7 @@
 
     header .burgerMenuOpen {
         display: flex;
+        margin-right: 20px;
     }
 }
 

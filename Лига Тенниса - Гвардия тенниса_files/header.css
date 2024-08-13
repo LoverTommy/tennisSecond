@@ -72,6 +72,7 @@ header {
     background-color: white;
     z-index: 100;
     width: 1400px;
+    left: calc(50% - 700px);
 }
 
 header .logo {
@@ -92,6 +93,7 @@ header .menu a {
     color: black;
     font-size: 18px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 header .right {

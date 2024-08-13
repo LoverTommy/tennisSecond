@@ -71,7 +71,8 @@ header {
     position: fixed;
     background-color: white;
     z-index: 100;
-    width: 1400px;
+    width: 1300px;
+    left: calc(50% - 650px);
 }
 
 header .logo {
