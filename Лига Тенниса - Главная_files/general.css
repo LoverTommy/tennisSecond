@@ -30,7 +30,7 @@ a:active {
 /* tournamentStatistics */
 
 .tournamentStatistics {
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 50px;
 }
 
@@ -38,7 +38,7 @@ a:active {
 .tournamentStatistics .content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 5px;
 }
 
 .tournamentStatistics .content .title {
@@ -263,7 +263,6 @@ a:active {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-top: 50px;
 }
 
 .news .top {
@@ -346,13 +345,14 @@ a:active {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-top: 40px;
     font-family: 'montserrat';
     width: 900px;
     margin-bottom: 40px;
     box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
     border-radius: 24px;
     padding: 16px 32px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .activeTournament .overview {
@@ -516,19 +516,19 @@ a:active {
     width: 30px;
     height: 30px;
     position: absolute;
-    z-index: 1000;
+    z-index: 99;
     cursor: pointer;
 }
 
 .scrollLeft {
     transform: rotate(180deg);
     left: 0;
-    top: 55%;
+    top: 50%;
 }
 
 .scrollRight {
     right: 0;
-    top: 55%;
+    top: 50%;
 }
 
 .tournamentStatistics .content {

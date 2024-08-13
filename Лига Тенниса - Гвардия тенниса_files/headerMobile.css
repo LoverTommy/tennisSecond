@@ -14,7 +14,13 @@
 
 
 @media screen and (max-width: 1200px) {
+    header .menu {
+        justify-content: center !important;
+    }
 
+    header {
+        padding: 0px 20px !important;
+    }
 }
 
 @media screen and (max-width: 890px) {

@@ -257,4 +257,8 @@
         height: 30vw;
         object-fit: cover;
     }
+
+    .tournamentStatistics {
+        padding-top: 70px;
+    }
 }
