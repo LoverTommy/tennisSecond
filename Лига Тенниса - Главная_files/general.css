@@ -397,7 +397,7 @@ a:active {
 
 .matchItem h4 {
     font-family: 'montserrat';
-    font-size: 13px;
+    font-size: 10px;
     text-transform: uppercase;
 }
 
@@ -418,6 +418,7 @@ a:active {
 
 .matchItem .matchTitle h4 span {
     color: dodgerblue;
+    font-size: 10px;
 }
 
 .matchItem {
@@ -428,7 +429,7 @@ a:active {
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03);
     border-radius: 16px;
     padding: 15px 10px;
-    min-width: 433px;
+    min-width: 305px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -483,17 +484,18 @@ a:active {
 .matchItem .rules a {
     display: flex;
     align-items: center;
+    font-size: 12px;
 }
 
 .matchItem .rules a img {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     margin-left: 5px;
 }
 
 .matchItem .rules a span {
     color: dodgerblue;
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 400;
     align-self: flex-end;
 }
