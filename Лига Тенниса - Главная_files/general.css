@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+a,
+a:visited,
+a:active {
+    text-decoration: none; /* Убирает подчеркивание ссылок */
+    color: inherit; /* Наследует цвет текста от родительского элемента */
+    cursor: auto; /* Убирает стандартный курсор при наведении */
+}
+/* tournamentStatistics */
+
+.tournamentStatistics {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+.tournamentStatistics .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tournamentStatistics .content .title {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    width: max-content;
+}
+
+
+.tournamentStatistics .content .title span {
+    font-family: 'montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tournamentStatistics .content .title img {
+    width: 17px;
+    height: 18px;
+}
+
+.tournamentStatistics .content .title span:first-child {
+    position: relative;
+}
+
+.tournamentStatistics .content .title span:first-child::after {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    right: -5px;
+    top: 2px;
+}
+
+.tournamentStatistics .content .items {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+/* Tournaments */
+
+.tournaments {
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+
+.tournaments h1 {
+    font-family: 'montserrat';
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tournaments .filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.tournaments .filter > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tournaments .filter > div h4 {
+    font-family: 'montserrat';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.tournaments .filter > div .active {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.tournaments .filter > div #pastActive {
+    background-color: rgb(209, 206, 16);
+}
+
+.tournaments .tournamentsList {
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.tournaments #pastTournaments {
+    display: flex;
+}
+
+.tournaments .tournamentsList .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournaments .tournamentsList .item .left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tournaments .tournamentsList .item .left img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border: 1px rgba(0, 0, 0, 0.329) solid;
+    border-radius: 10px;
+}
+
+.tournaments .tournamentsList .item .left .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tournaments .tournamentsList .item .left .description span {
+    font-family: 'montserrat';
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.tournaments .tournamentsList .item .left .description h5 {
+    font-family: 'montserrat';
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.tournaments .tournamentsList .item .right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.tournaments .tournamentsList .item .right .rules {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.tournaments .tournamentsList .item  {
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 11px;
+    position: relative;
+}
+
+.tournaments .tournamentsList .item .right .rules span {
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 11px;
+    position: relative;
+}
+
+.tournaments .tournamentsList .item .right .rules span:first-child::after {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    right: -6px;
+    top: 2px;
+}
+
+.tournaments .tournamentsList .item .right .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tournaments .tournamentsList .item .right .buttons .entry {
+    font-family: 'montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 37px;
+    background-color: rgb(204, 176, 15);
+    text-align: center;
+    width: max-content;
+    cursor: pointer;
+}
+
+.tournaments .tournamentsList .item .right .buttons .watch {
+    font-family: 'montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 32px;
+    border: 1px rgb(204, 176, 15) solid;
+    width: max-content;
+    cursor: pointer;
+}
+
+.tournaments .tournamentsList .item .right img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+    border: 1px rgba(0, 0, 0, 0.329) solid;
+    border-radius: 10px;
+}
+
+
+/* news */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.news .top {
+    background-image: url('../images/ракетаjpg.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: end;
+    padding: 30px;
+    border: 1px rgba(0, 0, 0, 0.329) solid;
+    border-radius: 10px;
+}
+
+.news .top span {
+    font-family: 'montserrat';
+    font-size: 10px;
+}
+
+.news span {
+    font-family: 'montserrat';
+    font-size: 10px;
+}
+
+.news .top h2 {
+    font-family: 'montserrat';
+}
+
+.news .posts {
+    display: flex;
+    gap: 30px;
+}
+
+.news .posts .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news .posts .item .item-img {
+    width: 100%;
+    height: 200px;
+    border: 1px rgba(0, 0, 0, 0.329) solid;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news .posts .item .description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.news .posts .item .description span {
+    font-family: 'montserrat';
+    font-size: 10px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+.news .posts .item .description h4 {
+    font-family: 'montserrat';
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.news .posts .item .description p {
+    font-family: 'montserrat';
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+
+
+.activeTournament {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+    font-family: 'montserrat';
+    width: 900px;
+    margin-bottom: 40px;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
+    border-radius: 24px;
+    padding: 16px 32px;
+}
+
+.activeTournament .overview {
+    min-width: 157px;
+    min-height: 157px;
+    max-width: 157px;
+    max-height: 157px;
+}
+
+.activeTournament .overview img {
+    width: 100%;
+    max-height: 157px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activeTournament .descriptionActive {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.activeTournament .descriptionActive .activeName {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.activeTournament .descriptionActive .rowItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activeTournament .descriptionActive .rowItem h4 {
+    font-weight: 500;
+}
+
+.matchItem {
+    font-family: 'montserrat';
+}
+
+.matchItem h4 {
+    font-family: 'montserrat';
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.matchItem h4 a {
+    text-decoration: none;
+}
+
+.matchItem .matchTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.matchItem .matchTitle span {
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 14px;
+}
+
+.matchItem .matchTitle h4 span {
+    color: dodgerblue;
+}
+
+.matchItem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px rgba(23, 0, 33, 0.05);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    padding: 15px 10px;
+    min-width: 433px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.matchItem .peoples {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-right: 5px;
+}
+
+.matchItem .peoples .people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.matchItem .peoples .people span {
+    font-family: 'montserrat';
+    font-size: 12px;
+}
+
+.matchItem .peoples .people img {
+    width: 10px;
+    height: 10px;
+}
+
+.matchItem .peoples .peopleDouble .doublePeoples {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.matchItem .peoples .people .statistic span {
+    font-weight: 500;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+}
+
+.matchItem .peoples .people .statistic {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.matchItem .rules {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.matchItem .rules a {
+    display: flex;
+    align-items: center;
+}
+
+.matchItem .rules a img {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}
+
+.matchItem .rules a span {
+    color: dodgerblue;
+    font-size: 15px;
+    font-weight: 400;
+    align-self: flex-end;
+}
+
+.matchItem .rules span {
+    font-family: 'montserrat';
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.tournamentStatistics .content .items {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.scroll {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.scrollLeft {
+    transform: rotate(180deg);
+    left: 0;
+    top: 55%;
+}
+
+.scrollRight {
+    right: 0;
+    top: 55%;
+}
+
+.tournamentStatistics .content {
+    position: relative;
+}
+
+
+
+
+.partners {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    font-family: 'montserrat';
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners h2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    font-size: 40px;
+    color: black
+}
+
+.partners h2 hr {
+    height: 5px;
+    background-color: #e6e6e6;
+    outline: none;
+    border: none;
+}
+
+.partners img {
+    width: 150px;
+    height: 100px;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
+    object-fit: cover;
+    border-radius: 12px;
+}

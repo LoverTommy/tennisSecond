@@ -1,0 +1,260 @@
+@media screen and (max-width: 1450px) {
+    header {
+        width: 98%;
+        padding: 20px 10px;
+    }
+
+    .center,
+    .partners {
+        max-width: 98%;
+    }
+
+    .partners {
+        justify-content: center;
+        gap: 20px;
+        row-gap: 30px;
+    }
+} 
+
+@media screen and (max-width: 1200px) {
+
+
+    .tournamentStatistics .content .items > div .peoples .people {
+        width: 100%;
+    }
+
+    .center,
+    .partners {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .news .posts {
+        gap: 5%;
+    }
+
+    .news .posts .item {
+        width: 30%;
+    }
+
+    .news .posts .item img {
+        width: 100%;
+    }
+
+    header .menu {
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .activeTournament {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .tournaments .tournamentsList .item .right {
+        gap: 10px;
+    }
+
+    .tournaments .tournamentsList .item .right .buttons .entry {
+        padding: 8px 69px;
+        font-size: 12px;
+    }
+
+    .tournaments .tournamentsList .item .right .buttons .watch {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .tournaments .tournamentsList .item .right img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tournaments .tournamentsList .item .left img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header .menu a {
+        font-size: 12px;
+    }
+
+    header .menu {
+        justify-content: space-between;
+    }
+
+    header .right img {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .logo {
+        width: 60px;
+        height: 40px;
+    }
+
+    .activeTournament {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .tournaments h1 {
+        font-size: 30px;
+    }
+
+    .tournaments .filter > div h4 {
+        font-size: 12px;
+    }
+
+    .tournaments .tournamentsList {
+        align-items: center;
+    }
+
+    .tournaments .tournamentsList .item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tournaments .tournamentsList .item .right .rules {
+        align-self: start;
+    }
+
+    .news .top {
+        height: 200px;
+    }
+
+    .news .top h2 {
+        font-size: 18px;
+    }
+
+    .news .posts .item img {
+        height: 200px;
+    }
+
+    .news .posts {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .news .posts .item {
+        width: 80%;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    header .burgerMenuOpen {
+        display: flex;
+    }
+
+    .activeTournament {
+        align-items: start;
+    }
+
+    .activeTournament .descriptionActive {
+        gap: 15px;
+    }
+
+    .activeTournament .descriptionActive .rowItem {
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .matchItem {
+        min-width: 85vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .tournamentStatistics .content .title span {
+        font-size: 12px;
+    }
+
+    .tournamentStatistics .content .title span:first-child::after {
+        height: 12px;
+    }
+
+    .tournamentStatistics .content .title img {
+        width: 14px;
+        height: 15px;
+    }
+
+    .tournamentStatistics {
+        padding-bottom: 20px;
+    }
+
+    .tournaments {
+        padding-top: 20px;
+    }
+
+    .news .top {
+        padding: 15px;
+    }
+
+    .news .posts .item {
+        width: 100%;
+    }
+
+    .burgerMenu .top {
+        padding: 20px;
+    }
+
+    .burgerMenu {
+        height: 300px;
+    }
+
+    .burgerMenu .menu a {
+        font-size: 16px;
+    }
+
+    .matchItem h4 {
+        font-size: 10px;
+    }
+
+    .matchItem .matchTitle h4 span {
+        font-size: 10px;
+    }
+
+    .matchItem .matchTitle span {
+        font-size: 12px;
+    }
+
+    .matchItem .peoples .people span {
+        font-size: 11px;
+    }
+
+    .matchItem .rules a,
+    .matchItem .rules a span {
+        font-size: 12px;
+    }
+
+    .matchItem .rules a img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .partners h2 {
+        font-size: 32px;
+    }
+
+    .partners img {
+        width: 45%;
+        height: 30vw;
+        object-fit: cover;
+    }
+}
