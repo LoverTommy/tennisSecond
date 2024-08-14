@@ -41,7 +41,7 @@
                 <a href="">Турниры</a>
                 <a href="">Новости и медиа</a>
                 <a href="https://tennis-league.ru/players/">Игроки</a>
-                <a href="https://tennis-league.ru/championship/24/#">Матчи</a>
+                <a href="">Рейтинг</a>
                 <a href="">Статистика</a>
             </div>
         </div>
@@ -53,7 +53,7 @@
                 <a href="">Турниры</a>
                 <a href="">Новости и медиа</a>
                 <a href="https://tennis-league.ru/players/">Игроки</a>
-                <a href="https://tennis-league.ru/championship/24/#">Матчи</a>
+                <a href="">Рейтинг</a>
                 <a href="">Статистика</a>
             </div>
 
@@ -338,28 +338,51 @@
     </div>
 
     <script>
-        const statistics = document.querySelector('.items');
-        const scrollRight = document.getElementById('scrollRight');
-        const scrollLeft = document.getElementById('scrollLeft');
+        document.addEventListener("DOMContentLoaded", () => {
+            const statistics = document.getElementById('statisticsQ');
+            const scrollRight = document.getElementById('scrollRight');
+            const scrollLeft = document.getElementById('scrollLeft');
 
-        function getScrollAmount() {
-            const item = document.querySelector('.matchItem');
-            const itemWidth = item.clientWidth;
-            const itemMargin = 30;
-            return itemWidth + itemMargin;
-        }
+            function getScrollAmount() {
+                const item = document.querySelector('.item');
+                const itemWidth = item.clientWidth;
+                const itemMargin = parseInt(window.getComputedStyle(item).marginRight);
+                return itemWidth + itemMargin;
+            }
 
-        scrollRight.addEventListener('click', () => {
-            statistics.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-        });
+            function smoothScroll(element, amount, duration) {
+                const start = element.scrollLeft;
+                const startTime = performance.now();
 
-        scrollLeft.addEventListener('click', () => {
-            statistics.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-        });
+                function step(currentTime) {
+                    const timeElapsed = currentTime - startTime;
+                    const progress = Math.min(timeElapsed / duration, 1);
+                    element.scrollLeft = start + amount * easeInOutQuad(progress);
 
-        window.addEventListener('resize', () => {
-            getScrollAmount();
-        });
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(step);
+                    }
+                }
+
+                requestAnimationFrame(step);
+            }
+
+            function easeInOutQuad(t) {
+                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            }
+
+            scrollRight.addEventListener('click', () => {
+                smoothScroll(statistics, getScrollAmount(), 500);
+            });
+
+            scrollLeft.addEventListener('click', () => {
+                smoothScroll(statistics, -getScrollAmount(), 500);
+            });
+
+            window.addEventListener('resize', () => {
+                getScrollAmount();
+            });
+        })
     </script>
     <script src="./Лига Тенниса - Главная_files/header.js.Без названия"></script>
     
