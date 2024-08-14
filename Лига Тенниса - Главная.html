@@ -104,7 +104,6 @@
             <div class="content">
                 <div class="title" id="openStatistics">
                     <span>Текущий счёт</span>
-                    <span>Все турниры</span>
                 </div>
                 <img class="scrollLeft scroll" id="scrollLeft" src="./Лига Тенниса - Главная_files/arrowScroll.svg" alt="">
                 <div class="items" id="statisticsQ">
@@ -346,7 +345,7 @@
             function getScrollAmount() {
                 const item = document.querySelector('.item');
                 const itemWidth = item.clientWidth;
-                const itemMargin = parseInt(window.getComputedStyle(item).marginRight);
+                const itemMargin = 22;
                 return itemWidth + itemMargin;
             }
 
