@@ -40,8 +40,8 @@
     }
 
     header .logo {
-        width: 100px !important;
-        height: 60px !important;
+        width: 170px !important;
+        height: 80px !important;
     }
 }
 
@@ -57,7 +57,17 @@
 
     header .burgerMenuOpen {
         display: flex;
-        margin-right: 20px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header .burgerMenuOpen {
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        margin-right: 0 !important;
     }
 }
 

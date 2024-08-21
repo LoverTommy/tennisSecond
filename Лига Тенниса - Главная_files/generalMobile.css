@@ -262,3 +262,35 @@
         padding-top: 70px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .activeTournament .descriptionActive .rowItem {
+        flex-direction: row;
+    }
+
+    .activeTournament .descriptionActive .rowItem h4 {
+        font-size: 12px;
+    }
+
+    .activeTournament .descriptionActive .rowItem span {
+        font-size: 11px;
+    }
+
+    .activeTournament .overview {
+        align-self: center;
+    }
+
+    .activeTournament {
+        padding: 10px;
+    }
+
+    .activeTournament {
+        margin-bottom: 15px;
+    }
+
+    .tournamentStatistics .content .items {
+        flex-direction: column;
+        max-height: 650px;
+        flex-wrap: wrap;
+    }
+}

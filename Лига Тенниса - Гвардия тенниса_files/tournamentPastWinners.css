@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -25,6 +25,18 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.descriptionTable div h4 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .tournamentPastWinners .pastWinnersList .pastWinner {

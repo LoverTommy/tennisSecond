@@ -1,0 +1,180 @@
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+header {
+    width: 1400px;
+    left: calc(50% - 700px);
+}
+
+.playersTable {
+    padding-top: 100px;
+}
+
+.playersTable .lettersFilter {
+    display: flex;
+    background-color: #e6e6e6;
+    padding: 0px 20px;
+    justify-content: space-between;
+    position: fixed;
+    width: 1400px;
+    box-sizing: border-box;
+}
+
+
+.playersTable .lettersFilter h4 {
+    cursor: pointer;
+}
+
+
+@keyframes filterStrokeShow {
+    from{
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes filterStrokeHide {
+    from{
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.filterItem {
+    position: relative;
+    cursor: pointer;
+}
+
+.filterItem h4 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.filterItem .stroke {
+    background-color: #7814ff;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    animation-fill-mode: forwards;
+}
+
+.activeFilterItem .stroke {
+    width: 100%;
+}
+
+.lettersTable {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.lettersTable * {
+    box-sizing: border-box;
+}
+
+.lettersTable .man,
+.lettersTable .woman {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lettersTable .man h4,
+.lettersTable .woman h4 {
+    color: rgb(15, 109, 15);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.singleLetter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.singleLetter h5 {
+    width: 100%;
+    background-color: rgb(8, 78, 8);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.singleLetter span {
+    font-weight: 500;
+    color: rgb(15, 109, 15);
+    position: relative;
+    width: 100%;
+}
+
+.singleLetter span::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+
+@media screen and (max-width: 1450px) {
+    .playersTable .lettersFilter {
+        padding: 10px;
+        justify-content: start;
+        gap: 30px;
+        flex-wrap: wrap;
+        row-gap: 0;
+        width: 97vw;
+    }
+
+    .lettersTable {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .playersTable .lettersFilter h4 {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .playersTable .lettersFilter {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lettersTable {
+        padding-top: 240px;
+    }
+
+    .playersTable .lettersFilter {
+        width: 95%;
+        gap: 10px;
+        row-gap: 0;
+    } 
+
+    .singleLetter span {
+        font-size: 12px;
+    }
+}
