@@ -71,9 +71,9 @@ header {
     position: fixed;
     background-color: white;
     z-index: 100;
-    width: 1300px;
-    left: calc(50% - 650px);
+    width: 1400px;
     top: 0;
+    left: calc(50% - 700px);
 }
 
 header .logo {
@@ -94,6 +94,7 @@ header .menu a {
     color: black;
     font-size: 18px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 header .right {
@@ -124,6 +125,18 @@ header .burgerMenuOpen {
 
 
 
+@media screen and (max-width: 500px) {
+    .yearFilter .customSelectYears {
+        width: 200px;
+        max-height: 200px;
+    }
+
+    .yearFilter .customSelectYears .yearOption {
+        font-size: 12px;
+    }
+}
+
+
 
 .footer {
     max-width: 1400px;
@@ -149,8 +162,8 @@ header .burgerMenuOpen {
 }
 
 .footer-content .info .logo {
-    width: 170px;
-    height: 100px;
+    width: 200px;
+    height: 90px;
 }
 
 
@@ -260,4 +273,3 @@ header .burgerMenuOpen {
         width: 100%;
     }
 }
-

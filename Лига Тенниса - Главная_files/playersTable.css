@@ -23,6 +23,9 @@ header {
     position: fixed;
     width: 1400px;
     box-sizing: border-box;
+    top: 90px;
+    opacity: 1;
+    z-index: 100000000;
 }
 
 
@@ -98,11 +101,12 @@ header {
 
 .lettersTable .man h4,
 .lettersTable .woman h4 {
-    color: rgb(15, 109, 15);
+    color: black;
     font-size: 20px;
     text-align: center;
     margin: 0;
 }
+
 
 .singleLetter {
     width: 100%;
@@ -113,7 +117,7 @@ header {
 
 .singleLetter h5 {
     width: 100%;
-    background-color: rgb(8, 78, 8);
+    background-color: #7814ff;
     color: white;
     padding: 5px 10px;
     font-size: 16px;
@@ -122,7 +126,7 @@ header {
 
 .singleLetter span {
     font-weight: 500;
-    color: rgb(15, 109, 15);
+    color: #7814ff;
     position: relative;
     width: 100%;
 }
@@ -144,7 +148,8 @@ header {
         gap: 30px;
         flex-wrap: wrap;
         row-gap: 0;
-        width: 97vw;
+        width: 100%;
+        left: 0;
     }
 
     .lettersTable {
@@ -158,23 +163,24 @@ header {
         font-size: 14px;
     }
 
-    .playersTable .lettersFilter {
-        width: 98%;
-    }
 }
 
 @media screen and (max-width: 500px) {
     .lettersTable {
-        padding-top: 240px;
+        padding-top: 180px;
     }
 
     .playersTable .lettersFilter {
-        width: 95%;
         gap: 10px;
         row-gap: 0;
+        top: 80px;
     } 
 
     .singleLetter span {
         font-size: 12px;
+    }
+
+    .tournaments {
+        margin-top: 80px;
     }
 }

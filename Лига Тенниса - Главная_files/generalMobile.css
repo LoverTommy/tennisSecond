@@ -103,6 +103,8 @@
 
 @media screen and (max-width: 768px) {
 
+
+
     .tournaments h1 {
         font-size: 30px;
     }
@@ -180,6 +182,10 @@
 }
 
 @media screen and (max-width: 500px) {
+
+    .tournamentStatistics .content .items {
+        gap: 10px;
+    }
 
     .tournamentStatistics .content .title span {
         font-size: 12px;

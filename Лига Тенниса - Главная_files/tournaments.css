@@ -156,6 +156,7 @@ header {
     position: fixed;
     width: 1400px;
     box-sizing: border-box;
+    top: 90px;
 }
 
 
@@ -269,11 +270,12 @@ header {
 
 @media screen and (max-width: 1420px) {
     .months {
-        width: 95vw;
+        width: 100%;
         justify-content: start;
         gap: 50px;
         flex-wrap: wrap;
         row-gap: 0px;
+        left: 0;
     }
 
     .tournaments {
@@ -340,5 +342,23 @@ header {
 
     .filterItem h4 {
         font-size: 12px;
+    }
+
+    .yearFilter {
+        width: 100%;
+    }
+
+    .yearFilter .customSelectYears .yearOption {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .yearFilter .customSelectYears {
+        width: 200px;
+        max-height: 200px;
+    }
+
+    .months {
+        top: 80px;
     }
 }
