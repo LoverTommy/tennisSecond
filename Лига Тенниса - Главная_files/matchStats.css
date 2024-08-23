@@ -587,7 +587,6 @@
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 100%;
     position: relative;
 }
@@ -605,7 +604,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo hr {
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.082);
 }
 
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .left {
@@ -633,6 +637,12 @@
     align-items: center;
 }
 
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right span:nth-child(2),
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right span:nth-child(4) {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right img {
     width: 16px;
     height: 16px;
@@ -646,6 +656,8 @@
 .filter {
     align-self: flex-start;
     padding: 20px 20px 20px 0px;
+    display: flex;
+    gap: 40px;
 }
 
 .filter span {
@@ -767,7 +779,56 @@
 }
 
 
+@keyframes filterStrokeShow {
+    from{
+        width: 0%;
+    }
 
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes filterStrokeHide {
+    from{
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.filterItem {
+    position: relative;
+    cursor: pointer;
+}
+
+.filterItem h4 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.filterItem .stroke {
+    background-color: #7814ff;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    animation-fill-mode: forwards;
+}
+
+.activeFilterItem h4 {
+    color: black;
+}
+
+.activeFilterItem .stroke {
+    width: 100%;
+}
 
 
 

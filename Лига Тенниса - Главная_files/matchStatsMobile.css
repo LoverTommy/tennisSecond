@@ -223,7 +223,7 @@
     }
 
     .matchStats .stats .playerProfile .items .centerItem {
-        gap: 50px;
+        gap: 38px;
     }
 
     .matchStats .stats .prevMatches .matches .matchItem {
@@ -280,5 +280,13 @@
 
     .matchStats .double .stats .playerProfile .items .player .rank span {
         font-size: 14px;
+    }
+
+    .filterItem h4 {
+        font-size: 14px;
+    }
+
+    .sets {
+        row-gap: 0;
     }
 }

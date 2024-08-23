@@ -113,8 +113,14 @@
                     </div>
                 </div>
                 <div class="filter">
-                    <span id="statsButton">Статистика</span>
-                    <span id="h2hButton">Личные встречи</span>
+                    <div class="filterItem" id="statsButton">
+                        <h4 href="#">Статистика</h4>
+                        <div class="stroke"></div>
+                    </div>
+                    <div class="filterItem activeFilterItem" id="h2hButton">
+                        <h4 href="#">Личные встречи</h4>
+                        <div class="stroke"></div>
+                    </div>
                 </div>
                 <div class="stats" id="h2h">
                     <div class="statsBar">
@@ -145,10 +151,10 @@
                                 <span>00/00</span>
                             </div>
                             <div class="centerItem">
-                                <span>Одиночные Титулы</span>
-                                <span>Парные Титулы</span>
-                                <span>W/L Одиночные</span>
-                                <span>W/L Парные</span>
+                                <span>Одиночные титулы</span>
+                                <span>Парные титулы</span>
+                                <span>Пб/Пр Одиночные</span>
+                                <span>Пб/Пр Парные</span>
                             </div>
                             <div class="right">
                                 <span>0</span>
@@ -171,7 +177,7 @@
                                 <span>Что-то</span>
                             </div>
                             <div class="centerItem">
-                                <span>Высший Рейтинг</span>
+                                <span>Наивысший Рейтинг</span>
                                 <span>Город</span>
                                 <span>Рост</span>
                                 <span>Играет</span>
@@ -209,6 +215,7 @@
                                             <span>0</span>
                                         </div>
                                     </div>
+                                    <hr>
                                     <div class="player">
                                         <div class="left">
                                             <img src="../images/image.jpg" alt="#">
@@ -242,6 +249,7 @@
                                             <span>0</span>
                                         </div>
                                     </div>
+                                    <hr>
                                     <div class="player">
                                         <div class="left">
                                             <img src="../images/image.jpg" alt="#">
@@ -275,6 +283,7 @@
                                             <span>0</span>
                                         </div>
                                     </div>
+                                    <hr>
                                     <div class="player">
                                         <div class="left">
                                             <img src="../images/image.jpg" alt="#">
@@ -295,10 +304,22 @@
 
                 <div class="statistic" id="stats">
                     <div class="sets">
-                        <span>Матч</span>
-                        <span>Сет 1</span>
-                        <span>Сет 2</span>
-                        <span>Сет 3</span>
+                        <div class="filterItem activeFilterItem">
+                            <h4 href="#">Матч</h4>
+                            <div class="stroke"></div>
+                        </div>
+                        <div class="filterItem">
+                            <h4 href="#">Сет 1</h4>
+                            <div class="stroke"></div>
+                        </div>
+                        <div class="filterItem">
+                            <h4 href="#">Сет 2</h4>
+                            <div class="stroke"></div>
+                        </div>
+                        <div class="filterItem">
+                            <h4 href="#">Сет 3</h4>
+                            <div class="stroke"></div>
+                        </div>
                     </div>
                     <div class="service block">
                         <h2>Подачи</h2>
@@ -469,6 +490,29 @@
     </div>
 
     <script>
+
+const filterItems = document.getElementsByClassName('filterItem');
+
+for(let i of filterItems) {
+    i.addEventListener('mouseover', (eo)=>{
+        if(i.classList.contains('activeFilterItem')) {
+
+        }else {
+            i.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeShow; animation-duration: 0.6s; animation-fill-mode: forwards';
+        }
+        
+    })
+
+    i.addEventListener('mouseout', (eo)=>{
+        if(i.classList.contains('activeFilterItem')) {
+
+        }else {
+            i.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards';
+        }
+    })
+}
+
+
         const h2h = document.getElementById('h2h');
         const stats = document.getElementById('stats');
 
@@ -478,11 +522,17 @@
         h2hButton.addEventListener('click', (eo)=>{
             h2h.style.display = 'flex';
             stats.style.display = 'none';
+            statsButton.classList.remove('activeFilterItem')
+            statsButton.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards';
+            h2hButton.classList.add('activeFilterItem');
         })
 
         statsButton.addEventListener('click', (eo)=>{
             stats.style.display = 'flex';
             h2h.style.display = 'none';
+            h2hButton.classList.remove('activeFilterItem')
+            h2hButton.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards';
+            statsButton.classList.add('activeFilterItem')
         })
     </script>
 
