@@ -181,7 +181,10 @@ h1,h2,h3,h4,h5,h6 {
     gap: 10px;
     background-color: #7814ff;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: start;
 }
 
 .player .playerHeader .left .ranking h4 {
@@ -239,11 +242,11 @@ h1,h2,h3,h4,h5,h6 {
 .player .playerHeader .right {
     width: 50%;
     background-color: #7814ff;
-    padding: 60px 30px;
+    padding: 20px 30px 60px 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 80px;
 }
 
 .player .playerHeader .right h2 {
