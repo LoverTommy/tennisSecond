@@ -299,4 +299,12 @@
         max-height: 650px;
         flex-wrap: wrap;
     }
+
+    .scrollLeft {
+        left: -10px;
+    }
+    
+    .scrollRight {
+        right: -10px;
+    }
 }
