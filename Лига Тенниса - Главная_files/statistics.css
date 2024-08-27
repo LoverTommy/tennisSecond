@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+#return,
+#press,
+#hits {
+    display: none;
+}
+
+.statistics {
+    padding-top: 100px;
+}
+
+.statistics .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7814ff;
+    height: 140px;
+}
+
+.statistics .title h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.statistics .filter {
+    display: flex;
+    gap: 30px;
+    background-color: #e6e6e6;
+    padding: 0px 30px;
+}
+
+.statistics .filter .filterItem {
+    height: 54px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics .filter .filterItem h4 {
+    font-weight: 600;
+    color: #0a0a0a6e;
+}
+
+.statistics .filter .activeFilterItem h4 {
+    color: black;
+}
+
+.statistics .customFilter {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.158) solid;
+    padding-bottom: 15px;
+}
+
+.statistics .customFilter h4 {
+    width: 100%;
+    color: #0a0a0a6e;
+}
+
+.statistics .customFilter span {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #7814ff;
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.statistics table {
+    margin-top: 40px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.statistics table td {
+    border-bottom: 1px rgba(0, 0, 0, 0.158) solid;
+}
+
+.statistics table td:nth-child(3) {
+    border-left: 1px rgba(0, 0, 0, 0.158) solid;
+}
+
+.statistics table td:nth-child(4) {
+    border-right: 1px rgba(0, 0, 0, 0.158) solid;
+}
+
+.statistics table th {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.541);
+    padding: 5px;
+}
+
+.statistics table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.statistics table td .player {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.statistics table td .player img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px #e6e6e6 solid;
+}
+
+.statistics table td .player .name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.statistics table td .player .name h4 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.statistics table td .player .name h4 span {
+    color: #0a0a0a6e;
+}
+
+.statistics table td .player .name p img {
+    width: 20px;
+    height: 12px;
+    border-radius: 0;
+}
+
+.statistics table td .player .name p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0a0a0a6e;
+}
+
+.statistics table td {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.514);
+    font-size: 14px;
+}
+
+.statistics table td:first-child {
+    color: #7814ff;
+    font-size: 24px;
+}
+
+.statistics table td:nth-child(9) {
+    color: #7814ff;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .center {
+        max-width: 98%;
+    }
+
+    .tableWrap {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .statistics table {
+        width: 1400px;
+    }
+
+    .tableWrap {
+        padding-bottom: 10px;
+    }
+
+    .tableWrap::-webkit-scrollbar {
+        background-color: #e6e6e6;
+        border-radius: 12px;
+        height: 8px;
+    }
+
+    .tableWrap::-webkit-scrollbar-thumb {
+        background-color: #7814ff;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .statistics .filter {
+        flex-wrap: wrap;
+        row-gap: 0;
+        padding: 10px 20px;
+    }
+
+    .yearFilter .activeYearWrapper {
+        padding: 0;
+    }
+
+    .statistics .filter .yearFilter {
+        width: 100%;
+    }
+
+    .statistics .title {
+        height: max-content;
+        padding: 20px 0px;
+    }
+
+    .statistics .title h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .statistics .filter {
+        column-gap: 15px;
+    }
+
+    .statistics .filter .filterItem {
+        height: 30px;
+    }
+
+    .statistics .customFilter {
+        row-gap: 8px;
+        justify-content: center;
+    }
+
+    .statistics .customFilter h4 {
+        padding-bottom: 10px;
+    }
+
+    .statistics .customFilter span {
+        font-size: 10px;
+    }
+} 
