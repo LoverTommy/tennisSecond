@@ -560,3 +560,8 @@ a:active {
     object-fit: cover;
     border-radius: 12px;
 }
+
+.ball {
+    width: 15px !important;
+    height: 15px !important;
+}
