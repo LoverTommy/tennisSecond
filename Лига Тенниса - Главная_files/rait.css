@@ -1,0 +1,108 @@
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#customSelectReg {
+    display: none;
+}
+
+.filter {
+    justify-content: space-between;
+    padding: 10px 20px !important;
+}
+
+.filter .left,
+.filter .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter .left .dateFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.filter .left .dateFilter span {
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+}
+
+.filter .left .dateFilter input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+}
+
+.filter .right .search input {
+    border: 1px #7814ff solid;
+    padding: 8px 15px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.filter .right .comment,
+.filter .right .download {
+    cursor: pointer;
+}
+
+.filter .right .comment span,
+.filter .right .download span {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+table tbody tr {
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px rgba(0, 0, 0, 0.158) solid;
+}
+
+.statistics table td:nth-child(3)::after,
+.statistics table td:nth-child(4)::before {
+    display: none;
+}
+
+.statistics table td:nth-child(3) {
+    color: rgba(0, 0, 0, 0.514);
+}
+
+@media screen and (max-width: 750px) {
+    .filter {
+        row-gap: 20px !important;
+    }
+
+    .filterItem h4 {
+        font-size: 12px;
+    }
+
+    .category {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filter .right {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .yearFilter .customSelectYears {
+        left: -100px;
+    }
+
+    .category {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    .statistics .title h2 {
+        font-size: 20px;
+    }
+}

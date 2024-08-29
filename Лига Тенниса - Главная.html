@@ -499,6 +499,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        
         const statistics = document.getElementById("statisticsQ");
         const scrollRight = document.getElementById("scrollRight");
         const scrollLeft = document.getElementById("scrollLeft");
@@ -542,6 +543,7 @@
         window.addEventListener("resize", () => {
           getScrollAmount();
         });
+        smoothScroll(statistics, getScrollAmount(), 500);
       });
     </script>
     <script src="./Лига Тенниса - Главная_files/header.js.Без названия"></script>

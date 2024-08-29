@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://tennis-league.ru/ -->
+<html lang="en" class=""><link type="text/css" id="dark-mode" rel="stylesheet" href="https://tennis-league.ru/"><style type="text/css" id="dark-mode-сustom-style"></style><style type="text/css" id="dark-mode-theme-changer-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Лига Тенниса - Главная
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Лига Тенниса - Главная_files/css2" rel="stylesheet">
+    <!-- Другие ссылки <link rel="stylesheet" href="../static/css/general.css">--->
+    <link rel="stylesheet" href="./Лига Тенниса - Главная_files/header.css">
+    <link rel="stylesheet" href="./Лига Тенниса - Главная_files/headerMobile.css">
+    <link rel="stylesheet" href="./Лига Тенниса - Главная_files/tournaments.css">
+    <link rel="stylesheet" href="./Лига Тенниса - Главная_files/statistics.css">
+    <link rel="stylesheet" href="./Лига Тенниса - Главная_files/rait.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="burgerMenu" id="burgerMenu">
+            <div class="top">
+                <div class="buttons">
+
+                    
+                    <a href="https://tennis-league.ru/login">
+                        <img src="./Лига Тенниса - Главная_files/user.png" alt="#">
+                    </a>
+                    
+                    <a href="https://tennis-league.ru/r/">
+                        <img src="./Лига Тенниса - Главная_files/whistle.svg" alt="#">
+                    </a>
+                    
+                    <img src="./Лига Тенниса - Главная_files/search.svg" alt="#">
+                </div>
+                <img id="close" src="./Лига Тенниса - Главная_files/close.png" alt="close">
+            </div>
+
+            <div class="menu">
+                <a href="">Турниры</a>
+                <a href="">Новости и медиа</a>
+                <a href="https://tennis-league.ru/players/">Игроки</a>
+                <a href="">Рейтинг</a>
+                <a href="">Статистика</a>
+            </div>
+        </div>
+
+        <header>
+            <img class="logo" src="./Лига Тенниса - Главная_files/tennis league logo.png" alt="logo">
+
+            <div class="menu">
+                <a href="">Турниры</a>
+                <a href="">Новости и медиа</a>
+                <a href="https://tennis-league.ru/players/">Игроки</a>
+                <a href="">Рейтинг</a>
+                <a href="">Статистика</a>
+            </div>
+
+            <div class="right">
+                    <a href="https://tennis-league.ru/login">
+                        <img src="./Лига Тенниса - Главная_files/user.png" alt="#">
+                    </a>
+                    
+                    <a href="https://tennis-league.ru/r/">
+                        <img src="./Лига Тенниса - Главная_files/whistle.svg" alt="#">
+                    </a>
+                <img src="./Лига Тенниса - Главная_files/search.svg" alt="#">
+            </div>
+
+            <img class="burgerMenuOpen" id="burgerMenuOpen" src="./Лига Тенниса - Главная_files/burgerMenu.svg" alt="menu">
+        </header>
+        
+        <section class="statistics center">
+            <div class="title">
+                <h2>РЕЙТИНГ ЛИГИ ТЕННИСА</h2>
+            </div>
+
+            <div class="category">
+                <div class="filterItem" >
+                    <h4 class="">Мужской</h4>
+                    <div class="stroke"></div>
+                </div>
+                <div class="filterItem" >  
+                    <h4 class="">Женский</h4>
+                    <div class="stroke"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="filterItem activeFilterItem" id="serveB">
+                    <h4 class="">Одиночный рейтинг</h4>
+                    <div class="stroke"></div>
+                </div>
+                <div class="filterItem" id="returnB">  
+                    <h4 class="">Парный рейтинг</h4>
+                    <div class="stroke"></div>
+                </div>
+                <div class="filterItem" id="pressB">  
+                    <h4 class="">Чемпионская гонка</h4>
+                    <div class="stroke"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="filterItem" >
+                    <h4 class="" style="color: rgb(192, 192, 36)">Лидеры</h4>
+                    <div class="stroke"></div>
+                </div>
+                <div class="filterItem" >  
+                    <h4 class="" style="color: rgb(17, 207, 26)">Претенденты</h4>
+                    <div class="stroke"></div>
+                </div>
+                <div class="filterItem" >  
+                    <h4 class="" style="color: rgb(207, 31, 31)">Мэтры</h4>
+                    <div class="stroke"></div>
+                </div>
+                <div class="filterItem" >  
+                    <h4 class="" style="color: rgb(112, 29, 206)">Дебютанты</h4>
+                    <div class="stroke"></div>
+                </div>
+            </div>
+
+
+            <div class="filter">
+                <div class="left">
+                    <div class="dateFilter">
+                        <span>По состоянию на</span>
+                        <input type="date">
+                    </div>
+                    <div class="str"></div>
+                    <div class="yearFilter">
+                        <div class="activeYearWrapper" id="activeRegWrapper">
+                            <h4 class="activeYear" id="activeYear">Регион</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div class="customSelectYears" id="customSelectReg">
+                            <span class="yearOption">Какой-то</span>
+                            <span class="yearOption">Какой-то</span>
+                            <span class="yearOption">Какой-то</span>
+                            <span class="yearOption">Какой-то</span>
+                            <span class="yearOption">Какой-то</span>
+                            <span class="yearOption">Какой-то</span>
+                            <span class="yearOption">Какой-то</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="str"></div>
+                    <div class="search">
+                        <input type="text" name="" id="" placeholder="Поиск игрока">
+                    </div>
+                    <div class="str"></div>
+                    <div class="comment">
+                        <h4>Комментарий</h4>
+                        <span>к рейтингу</span>
+                    </div>
+                    <div class="str"></div>
+                    <div class="download">
+                        <h4>Скачать</h4>
+                        <span>рейтинг</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tableWrap" id="serve">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Позиция</th>
+                            <th>Игрок</th>
+                            <th>Город</th>
+                            <th>Турниры</th>
+                            <th>Титулы</th>
+                            <th>Начисленные <br> очки</th>
+                            <th>Сгоревшие <br> очки</th>
+                            <th>Очки за <br> 52 недели</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableWrap" id="return">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Позиция</th>
+                            <th>Игрок</th>
+                            <th>Город</th>
+                            <th>Парный балл <br> игрока</th>
+                            <th>Турниры</th>
+                            <th>Титулы</th>
+                            <th>Начисленные <br> очки</th>
+                            <th>Сгоревшие <br> очки</th>
+                            <th>Очки за <br> 52 недели</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                            <td>65.5%</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableWrap" id="press">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Позиция</th>
+                            <th>Игрок</th>
+                            <th>Город</th>
+                            <th>Турниры</th>
+                            <th>Титулы</th>
+                            <th>Начисленные <br> очки</th>
+                            <th>Сгоревшие <br> очки</th>
+                            <th>Очки с <br> начала года</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="player">
+                                    <img src="" alt="">
+                                    <div class="name">
+                                        <h4>Фамилия <span>Имя</span></h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>60.3%</td>
+                            <td>70.5%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <script>
+
+            const customItems = document.getElementsByClassName('customItem');
+
+            for(let i of customItems) {
+                i.addEventListener('click', (eo)=>{
+                    if(i.classList.contains('deActiveCustomItem')) {
+                        i.classList.remove('deActiveCustomItem');
+                    }else {
+                        i.classList.add('deActiveCustomItem');
+                    }
+                })
+            }
+
+
+            const serveB = document.getElementById('serveB');
+            const returnB = document.getElementById('returnB');
+            const pressB = document.getElementById('pressB');
+
+            const serve = document.getElementById('serve');
+            const returnT = document.getElementById('return');
+            const press = document.getElementById('press');
+
+            serveB.addEventListener('click', ()=>{
+                changeTable(serve, serveB);
+            })
+
+            returnB.addEventListener('click', ()=>{
+                changeTable(returnT, returnB);
+            })
+
+            pressB.addEventListener('click', ()=>{
+                changeTable(press, pressB);
+            })
+
+            let prevT = serve;
+            let prevB = serveB;
+
+            function changeTable(table, button) {
+                prevT.style.display = 'none';
+                table.style.display = 'block';
+                prevB.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards';
+                prevB.classList.remove('activeFilterItem');
+                button.classList.add('activeFilterItem');
+
+                prevT = table;
+                prevB = button;
+            }
+
+            const filterItems = document.getElementsByClassName('filterItem');
+
+            for(let i of filterItems) {
+                i.addEventListener('mouseover', (eo)=>{
+                    if(i.classList.contains('activeFilterItem')) {
+
+                    }else {
+                        i.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeShow; animation-duration: 0.6s; animation-fill-mode: forwards';
+                    }
+                    
+                })
+
+                i.addEventListener('mouseout', (eo)=>{
+                    if(i.classList.contains('activeFilterItem')) {
+
+                    }else {
+                        i.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards';
+                    }
+                })
+            }
+
+
+            // const yearOptions = document.getElementsByClassName('yearOption');
+            // const pageHref = window.location.href.split("/");
+            // const yearFilterData = pageHref[pageHref.length - 1];
+            // document.getElementById('activeYear').innerHTML = yearFilterData;
+
+            // for(let i of yearOptions) {
+            //     if(i.innerHTML.substring(0, 4) === yearFilterData) {
+            //         i.classList.add('yearOptionActive');
+            //     }
+            // }
+
+
+            const activeRegWrapper = document.getElementById('activeRegWrapper');
+            const customSelectReg = document.getElementById('customSelectReg');
+
+            customSelectReg.style.display = 'none';
+
+            activeRegWrapper.addEventListener('click', (eo)=>{
+                if(customSelectReg.style.display === 'none') {
+                    customSelectReg.style.display = 'flex';
+                }else {
+                    customSelectReg.style.display = 'none';
+                }
+            })
+
+
+
+
+            let mounths = document.getElementsByClassName('filterItem');
+            let newsMounths = document.getElementsByClassName('title');
+
+            for(let i of mounths) {
+                i.addEventListener('click', (eo)=> {
+                    eo.currentTarget.querySelector('.stroke').style.cssText = 'animation-name: filterStrokeShow; animation-duration: 0.6s; animation-fill-mode: forwards';
+                    document.getElementById(`${eo.currentTarget.id.slice(0,-1)}`).scrollIntoView({ block: "center", behavior: "smooth" })
+                })
+            }
+        </script>
+
+        
+
+    <script src="./Лига Тенниса - Главная_files/header.js.Без названия"></script>
+    
+    <script src="./Лига Тенниса - Главная_files/general.js.Без названия"></script>
+
+
+</body></html>
