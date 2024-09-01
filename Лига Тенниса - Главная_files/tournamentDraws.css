@@ -314,6 +314,20 @@
     display: none;
 }
 
+.points span:nth-child(1), 
+.points span:nth-child(3) {
+    padding: 5px !important;
+}
+
+.points span {
+    font-weight: 500 !important;
+    font-size: 12px;
+}
+
+.matchItem {
+    padding: 5px !important;
+    border-radius: 0 !important;
+}
 
 @media screen and (max-width: 1000px) {
     .matchItem {

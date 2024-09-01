@@ -544,7 +544,6 @@
 
 .matchStats .stats .prevMatches .matches .matchItem {
     display: flex;
-    gap: 160px;
     align-items: center;
 }
 
@@ -552,6 +551,8 @@
     display: flex;
     flex-direction: column; 
     align-items: start;
+    align-self: flex-start;
+    padding-bottom: 20px;
 }
 
 .matchStats .double .stats .prevMatches .matches .matchItem .matchInfo {
@@ -560,7 +561,7 @@
 
 .matchStats .double .stats .prevMatches .matches .matchItem .matchInfo .player .left {
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
 }
 
 .matchStats .double .stats .prevMatches .matches .matchItem .left .item {
@@ -617,6 +618,8 @@
     gap: 5px;
     align-items: center;
     flex-direction: row;
+    padding-bottom: 0 !important;
+    align-self: center;
 }
 
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .left img {
@@ -637,11 +640,7 @@
     align-items: center;
 }
 
-.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right span:nth-child(2),
-.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right span:nth-child(4) {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.082);
-}
+
 
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right img {
     width: 16px;

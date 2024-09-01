@@ -22,7 +22,7 @@
     padding-top: 120px;
 }
 
-.tournamentWrapper .tournamentDescription {
+.tournamentDescription {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@
     border-radius: 30px;
 }
 
-.tournamentWrapper .tournamentDescription .tournamentTitle {
+.tournamentDescription .tournamentTitle {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -40,17 +40,35 @@
     width: 100%;
     background-color: #7814ff;
     padding: 20px 0px;
+    height: 180px;
+    justify-content: center;
 }
 
-.tournamentWrapper .tournamentDescription .tournamentTitle h1 {
+.tournamentDescription .tournamentTitle h1 {
     color: white;
 }
 
-.tournamentWrapper .tournamentDescription .tournamentTitle p {
+.tournamentDescription .tournamentTitle p {
     color: white;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-.tournamentWrapper .tournamentDescription .tournamentImage {
+.tournamentDescription .tournamentTitle span {
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+}
+
+.tournamentDescription .tournamentTitle .titleBottom {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.tournamentDescription .tournamentImage {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -300,7 +318,7 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
-    column-gap: 10px;
+    justify-content: space-between;
     padding-top: 30px;
 }
 
@@ -333,6 +351,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .matchItem .matchTitle span {
@@ -401,6 +420,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .matchItem .rules a {
@@ -426,6 +446,7 @@
     font-size: 11px;
     font-weight: 600;
 }
+
 
 /* matchItemSingle */
 
@@ -457,6 +478,7 @@
     .matches {
         justify-content: center;
         width: 100%;
+        column-gap: 30px;
     }
 }
 
@@ -518,7 +540,7 @@
         font-size: 16px;
     }
 
-    .tournamentWrapper .tournamentDescription .tournamentImage {
+    .tournamentDescription .tournamentImage {
         padding: 10px;
     }
 }
@@ -594,18 +616,7 @@
     }
 }
 
-.matchItem .rules a {
-    font-size: 14px;
-}
 
-.matchItem .rules a span {
-    font-size: 14px;
-}
-
-.matchItem .rules span {
-    font-size: 12px;
-    font-weight: 500;
-}
 
 
 

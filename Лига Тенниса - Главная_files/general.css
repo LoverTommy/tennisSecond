@@ -396,11 +396,19 @@ a:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.err {
+    padding: 2px;
+    font-size: 10px;
+    color: white;
+    background-color: #7814ff;
 }
 
 .matchItem .matchTitle span {
     color: rgba(0, 0, 0, 0.671);
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .matchItem .matchTitle h4 span {
@@ -466,6 +474,7 @@ a:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .matchItem .rules a {
@@ -497,6 +506,7 @@ a:active {
     position: relative;
     overflow-x: hidden;
     width: 100%;
+    padding-left: 5px;
 }
 
 .scroll {
@@ -564,4 +574,149 @@ a:active {
 .ball {
     width: 15px !important;
     height: 15px !important;
+}
+
+
+
+.matchItem {
+    display: flex;
+    align-items: center;
+}
+
+.matchItem .left {
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+}
+
+.matchItem .matchInfo {
+    gap: 0;
+}
+
+.matchItem .matchInfo .player .left {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.matchItem .left .item {
+    display: flex;
+    gap: 5px;
+}
+
+.matchItem .left h5 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #7814ff;
+}
+
+.matchItem .left h6 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.matchItem .left span {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.matchItem .matchInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.matchItem .matchInfo::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(126, 24, 221) 50%, black 50%);;
+    position: absolute;
+    left: -5px;
+}
+
+.matchItem .matchInfo .player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.matchItem .matchInfo hr {
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.matchItem .matchInfo .player .left {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.matchItem .matchInfo .player .left img {
+    width: 32px;
+    height: 18px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+.matchItem .matchInfo .player .left h5 {
+    font-size: 14px;
+    padding-left: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+.matchItem .matchInfo .player .right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.points {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.points span:nth-child(1),
+.points span:nth-child(3) {
+    padding: 15px 5px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.points span:nth-child(3) {
+    padding: 15px 5px;
+    width: max-content;
+}
+
+.matchItem .matchInfo .player .right img {
+    width: 16px;
+    height: 16px;
+}
+
+.matchItem .matchInfo .player .right span {
+    font-weight: 800;
+}
+
+.matchItem {
+    gap: 5px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.doubleMatchItem .matchInfo {
+    gap: 0;
+}
+
+.doubleMatchItem .matchInfo .player .left {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doubleMatchItem .left .item {
+    display: flex;
+    gap: 5px;
 }

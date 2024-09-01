@@ -13,7 +13,6 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat';
 }
 
-
 .matchItem h4 {
     font-family: 'montserrat';
     font-size: 10px;
@@ -48,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03);
     border-radius: 16px;
     padding: 15px 10px;
-    width: 315px;
+    min-width: max-content !important
 }
 
 .matchItem .peoples {
@@ -936,9 +935,82 @@ h1,h2,h3,h4,h5,h6 {
 .h2hPopap .wrapperPopap .matches {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 20px;
+    row-gap: 30px;
     justify-content: center;
+    padding-top: 20px;
+}
+
+
+.stats {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.stats * {
+    margin: 0;
+}
+
+.stats .blocks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats .blocks .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgba(0, 0, 0, 0.062) solid;
+    flex-direction: column;
+    gap: 10px;
+    width: 210px;
+    height: 210px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.stats .blocks .block p {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.stats .blocks .block h2 {
+    font-size: 32px;
+    color: #7814ff;
+    font-weight: 700;
+}
+
+.stats .table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 46%;
+    height: max-content;
+}
+
+.stats .table h4 {
+    font-weight: 700;
+    color: black;
+    font-size: 24px;
+}
+
+.stats .table .row {
+    padding: 14px 20px;
+    border: 1px rgba(0, 0, 0, 0.062) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats .table .row h5 {
+    color: #7814ff;
+    font-size: 18px;
 }
 
 
@@ -962,6 +1034,8 @@ h1,h2,h3,h4,h5,h6 {
     .tournamentsList .tournamentItem .bottom .score div {
         padding: 20px 14%;
     }
+
+    
 }
 
 @media screen and (max-width: 1060px) {
@@ -995,6 +1069,10 @@ h1,h2,h3,h4,h5,h6 {
 
     .player .description h4 span {
         width: 100%;
+    }
+
+    .stats .blocks {
+        flex-wrap: wrap;
     }
 }
 
@@ -1225,6 +1303,36 @@ h1,h2,h3,h4,h5,h6 {
 
     .h2hPopap .wrapperPopap {
         height: 70dvh;
+    }
+
+    .stats .blocks .block {
+        width: 120px;
+        height: 120px;
+        gap: 5px;
+    }
+
+    .stats .blocks .block p {
+        font-size: 10px;
+    }
+
+    .stats .blocks .block h2 {
+        font-size: 18px;
+    }
+
+    .stats .table h4 {
+        font-size: 20px;
+    }
+
+    .stats .table {
+        width: 100%;
+    }
+
+    .stats .table .row {
+        gap: 20px;
+    }
+
+    .playerFilter .filterItem span {
+        font-size: 12px;
     }
 }
 
