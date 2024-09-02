@@ -633,52 +633,59 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        
+
         const statistics = document.getElementById("statisticsQ");
         const scrollRight = document.getElementById("scrollRight");
         const scrollLeft = document.getElementById("scrollLeft");
 
         function getScrollAmount() {
-          const item = document.querySelector(".item");
-          const itemWidth = 305;
-          const itemMargin = 20;
-          return itemWidth + itemMargin;
+            const item = document.querySelector(".item");
+            const itemWidth = (window.matchMedia("(max-width: 500px)").matches) ? item.clientWidth : 305;
+            const itemMargin = (window.matchMedia("(max-width: 500px)").matches) ? 10 : 20;
+            return itemWidth + itemMargin;
         }
 
         function smoothScroll(element, amount, duration) {
-          const start = element.scrollLeft;
-          const startTime = performance.now();
+            const start = element.scrollLeft;
+            const startTime = performance.now();
 
-          function step(currentTime) {
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / duration, 1);
-            element.scrollLeft = start + amount * easeInOutQuad(progress);
+            function step(currentTime) {
+                const timeElapsed = currentTime - startTime;
+                const progress = Math.min(timeElapsed / duration, 1);
+                element.scrollLeft = start + amount * easeInOutQuad(progress);
 
-            if (timeElapsed < duration) {
-              requestAnimationFrame(step);
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(step);
+                }
             }
-          }
 
-          requestAnimationFrame(step);
+            requestAnimationFrame(step);
         }
 
         function easeInOutQuad(t) {
-          return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        }
+
+        function setInitialScrollPosition() {
+            statistics.scrollLeft = (statistics.scrollWidth - statistics.clientWidth) / 2;
         }
 
         scrollRight.addEventListener("click", () => {
-          smoothScroll(statistics, getScrollAmount(), 500);
+            smoothScroll(statistics, getScrollAmount(), 500);
         });
 
         scrollLeft.addEventListener("click", () => {
-          smoothScroll(statistics, -getScrollAmount(), 500);
+            smoothScroll(statistics, -getScrollAmount(), 500);
         });
 
         window.addEventListener("resize", () => {
-          getScrollAmount();
+            getScrollAmount();
+            setInitialScrollPosition();
         });
-        smoothScroll(statistics, getScrollAmount(), 500);
+
+        window.addEventListener("load", setInitialScrollPosition);
       });
+
     </script>
     <script src="./Лига Тенниса - Главная_files/header.js.Без названия"></script>
 

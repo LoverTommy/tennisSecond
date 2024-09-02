@@ -77,7 +77,7 @@
     }
 
     .burgerMenu {
-        height: 440px;
+        height: 440px !important;
     }
 
     .burgerMenu .menu a {

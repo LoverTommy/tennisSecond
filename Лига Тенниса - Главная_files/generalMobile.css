@@ -307,4 +307,12 @@
     .scrollRight {
         right: -10px;
     }
+
+    .matchItem {
+        min-width: 100% !important;
+    }
+
+    .tournamentStatistics .content .items {
+        padding-left: 0;
+    }
 }
