@@ -107,8 +107,8 @@
                 4
               </h4>
               <div class="singDoubl">
-                <span id="single" class="activeRank">Одиночные</span>
-                <span id="double">Парные</span>
+                <span id="single" class="activeRank">Одиночный</span>
+                <span id="double">Парный</span>
               </div>
             </div>
 
@@ -149,7 +149,7 @@
         </div>
         <div class="playerFilter">
           <div class="filterItem activeFilterItem" id="description">
-            <span>Описание</span>
+            <span>Основное</span>
             <div class="stroke"></div>
           </div>
           <div class="filterItem" id="matches">
@@ -1106,28 +1106,53 @@
 
       const matchesButton = document.getElementById("matches");
       const descriptionButton = document.getElementById("description");
+      const statsButton = document.getElementById('stats');
 
       const matchesList = document.getElementById("matchesList");
       const description = document.getElementById("descriptionWrapper");
+      const statsBlock = document.getElementById('statsBlock');
 
       matchesButton.addEventListener("click", (eo) => {
         descriptionButton.classList.remove("activeFilterItem");
+        statsButton.classList.remove("activeFilterItem");
         descriptionButton.querySelector(".stroke").style.cssText =
           "animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards";
         matchesButton.classList.add("activeFilterItem");
 
+        statsButton.querySelector(".stroke").style.cssText =
+          "animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards";
+
+          statsBlock.style.display = 'none';
         matchesList.style.display = "block";
         description.style.display = "none";
       });
 
       descriptionButton.addEventListener("click", (eo) => {
         matchesButton.classList.remove("activeFilterItem");
+        statsButton.classList.remove("activeFilterItem");
         matchesButton.querySelector(".stroke").style.cssText =
           "animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards";
         descriptionButton.classList.add("activeFilterItem");
+        statsButton.querySelector(".stroke").style.cssText =
+          "animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards";
 
+          statsBlock.style.display = 'none';
         matchesList.style.display = "none";
         description.style.display = "flex";
+      });
+
+      statsButton.addEventListener("click", (eo) => {
+        descriptionButton.classList.remove("activeFilterItem");
+        matchesButton.classList.remove("activeFilterItem");
+        descriptionButton.querySelector(".stroke").style.cssText =
+          "animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards";
+        matchesButton.querySelector(".stroke").style.cssText =
+        "animation-name: filterStrokeHide; animation-duration: 0.6s; animation-fill-mode: forwards";
+        statsButton.classList.add("activeFilterItem");
+
+        description.style.display = "none";
+        matchesList.style.display = "none";
+        statsBlock.style.display = "flex";
       });
     </script>
   </body>

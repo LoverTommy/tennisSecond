@@ -17,6 +17,24 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 8px 4px;
+    box-sizing: border-box;
+}
+
+.activeMatchItem .matchTitle {
+    background-color: #7814ff;
+}
+
+.activeMatchItem .matchTitle h4 {
+    color: white;
+}
+
+.activeMatchItem .matchTitle h4 span {
+    color: rgba(255, 255, 255, 0.699) !important;
+}
+
+.activeMatchItem .matchTitle span:last-child {
+    color: white;
 }
 
 .err {
@@ -95,6 +113,26 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 8px 4px;
+    box-sizing: border-box;
+}
+
+.activeMatchItem .rules {
+    background-color: rgba(0, 0, 0, 0.082);
+    
+}
+
+.deActiveMatchItem .rules,
+.deActiveMatchItem .matchTitle {
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.deActiveMatchItem .matchInfo::after {
+    background: linear-gradient(to bottom, #7814ff 50%, black 50%) !important;
+}
+
+.activeMatchItem .matchInfo::after {
+    background: linear-gradient(to bottom, #7814ff 50%, black 50%) !important;
 }
 
 .matchItem .rules a {
@@ -147,6 +185,8 @@
 .matchItem {
     display: flex;
     align-items: center;
+    border-radius: 0;
+    gap: 0px !important;
 }
 
 .matchItem .left {
@@ -196,9 +236,9 @@
     content: '';
     width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, rgb(126, 24, 221) 50%, black 50%);;
+    background: linear-gradient(to bottom, rgb(126, 24, 221) 50%, rgba(0, 0, 0, 0.082) 50%);;
     position: absolute;
-    left: -5px;
+    left: 0px;
 }
 
 .matchItem .matchInfo .player {
@@ -250,12 +290,12 @@
 
 .points span:nth-child(1),
 .points span:nth-child(3) {
-    padding: 15px 5px;
+    padding: 10px 5px;
     background-color: rgba(0, 0, 0, 0.082);
 }
 
 .points span:nth-child(3) {
-    padding: 15px 5px;
+    padding: 10px 5px;
     width: max-content;
 }
 
@@ -265,7 +305,7 @@
 }
 
 .matchItem .matchInfo .player .right span {
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .matchItem {

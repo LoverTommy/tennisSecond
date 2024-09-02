@@ -64,7 +64,7 @@ a:active {
 
 .tournamentStatistics .content .items {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 

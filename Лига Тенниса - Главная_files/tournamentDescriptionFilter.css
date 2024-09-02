@@ -7,13 +7,8 @@
 
 .tournamentDescriptionFilter .descriptionTable {
     display: flex;
-    flex-direction: column;
     gap: 15px;
-    width: 800px;
     margin: 0 auto;
-    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .06);
-    border-radius: 24px;
-    padding: 32px;
 }
 
 .tournamentDescriptionFilter .descriptionTable div {
@@ -121,6 +116,12 @@
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .dt {
+        flex-wrap: wrap !important;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .tournamentDescriptionFilter {
         padding-top: 30px;
@@ -190,6 +191,14 @@
 
     .tournamentDescriptionFilter .lastNews .newsItem img {
         height: 50vw;
+    }
+
+    .dt .winner {
+        width: 100%;
+    }
+
+    .dt {
+        padding: 0 !important;
     }
 }
 
