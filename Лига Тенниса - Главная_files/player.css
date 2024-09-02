@@ -647,7 +647,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .tournamentsList .tournamentItem .head p span {
     color: #7814ff;
-    font-weight: 700;
+    font-weight: 500;
     padding-left: 5px;
 }
 
@@ -663,6 +663,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .tournamentsList .tournamentItem .head h6 span {
     color: #7814ff;
+    font-weight: 500;
 }
 
 .tournamentsList .tournamentItem .bottom {
@@ -1340,6 +1341,16 @@ h1,h2,h3,h4,h5,h6 {
 
     .playerFilter .filterItem span {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tournamentsList .tournamentItem .bottom .opponent {
+        width: 35%;
+    }
+
+    .tournamentsList .tournamentItem .bottom .round {
+        width: 20%;
     }
 }
 

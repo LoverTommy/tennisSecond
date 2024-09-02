@@ -20,6 +20,34 @@
     border-radius: 32px 32px 0px 0px;
 }
 
+.lettersTable {
+    padding-top: 20px !important;
+    gap: 10px !important;
+}
+
+.lettersTable .man,
+.lettersTable .woman {
+    background-color: rgba(134, 128, 128, 0.11) !important;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.lettersTable .man span, .lettersTable .woman span {
+    font-weight: 500;
+    color: black;
+    position: relative;
+    width: 100%;
+}
+
+.lettersTable .man span::before, .lettersTable .woman span::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
 .list .listWrapper .playerItem .image img {
     width: 140px;
     height: 140px;
@@ -136,6 +164,25 @@
     display: none;
 }
 
+@media screen and (max-width: 1400px) {
+    .lettersTable {
+        justify-content: center;
+    }
+    .lettersTable .man, .lettersTable .woman {
+        width: 24% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .lettersTable {
+        flex-wrap: wrap;
+    }
+
+    .lettersTable .man, .lettersTable .woman {
+        width: 49% !important;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .list .listWrapper {
@@ -200,5 +247,25 @@
 
     .list {
         padding-top: 30px;
+    }
+
+    .lettersTable .man, .lettersTable .woman {
+        width: 100% !important;
+    }
+
+    .lettersTable .man span {
+        text-align: center;
+    }
+
+    .lettersTable .man span::before {
+        left: 0;
+    }
+
+    .tournamentWrapper {
+        padding-top: 80px;
+    }
+
+    .tournamentWrapper .tournamentFilter .filterItem {
+        width: max-content !important;
     }
 }

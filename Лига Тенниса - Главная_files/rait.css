@@ -13,6 +13,17 @@
     padding: 10px 20px !important;
 }
 
+.tableWrap {
+    margin-top: -20px;
+}
+
+.str {
+    width: 40%;
+    margin: 5px auto;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
 .filter .left,
 .filter .right {
     display: flex;
