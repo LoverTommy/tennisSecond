@@ -614,6 +614,10 @@
     .filters .yearFilter .customSelectYears {
         left: -20px;
     }
+
+    .tournamentWrapper {
+        padding-top: 80px;
+    }
 }
 
 

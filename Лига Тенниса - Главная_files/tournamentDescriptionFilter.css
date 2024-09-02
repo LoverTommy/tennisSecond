@@ -194,11 +194,15 @@
     }
 
     .dt .winner {
-        width: 100%;
+        width: max-content;
+        text-align: center;
     }
 
     .dt {
         padding: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
