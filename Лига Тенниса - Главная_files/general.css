@@ -399,12 +399,6 @@ a:active {
     width: 100%;
 }
 
-.err {
-    padding: 2px;
-    font-size: 10px;
-    color: white;
-    background-color: #7814ff;
-}
 
 .matchItem .matchTitle span {
     color: rgba(0, 0, 0, 0.671);
@@ -662,8 +656,8 @@ a:active {
 }
 
 .matchItem .matchInfo .player .left h5 {
-    font-size: 14px;
-    padding-left: 5px;
+    font-size: 12px !important;
+    padding-left: 12px !important;
     color: black;
     font-weight: 500;
 }
@@ -683,12 +677,12 @@ a:active {
 
 .points span:nth-child(1),
 .points span:nth-child(3) {
-    padding: 15px 5px;
+    padding: 7px 8px !important;
     background-color: rgba(0, 0, 0, 0.082);
 }
 
-.points span:nth-child(3) {
-    padding: 15px 5px;
+.points span:nth-child(2) {
+    padding: 7px 8px !important;
     width: max-content;
 }
 
@@ -720,3 +714,5 @@ a:active {
     display: flex;
     gap: 5px;
 }
+
+

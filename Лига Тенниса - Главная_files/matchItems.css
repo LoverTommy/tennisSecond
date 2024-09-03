@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 8px 4px;
+    padding: 4px 4px;
     box-sizing: border-box;
 }
 
@@ -113,7 +113,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 8px 4px;
+    padding: 4px 4px;
     box-sizing: border-box;
 }
 
@@ -145,11 +145,12 @@
     width: 12px;
     height: 12px;
     margin-left: 5px;
+    margin-right: 3px;
 }
 
 .matchItem .rules a span {
     color: dodgerblue;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     align-self: flex-end;
 }
@@ -160,7 +161,39 @@
     font-weight: 600;
 }
 
+.points span:nth-child(1),
+.points span:nth-child(3) {
+    position: relative
+}
 
+.points span:nth-child(1)::after,
+.points span:nth-child(3)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+
+.matchItem .matchInfo .player:nth-child(3) .points span:nth-child(1)::after,
+.matchItem .matchInfo .player:nth-child(3) .points span:nth-child(3)::after {
+    top: -1px;
+}
+
+.matchItem .matchInfo .player:nth-child(3) .points span:nth-child(1)::before,
+.matchItem .matchInfo .player:nth-child(3) .points span:nth-child(3)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
 
 
 
@@ -283,29 +316,34 @@
 
 .points {
     display: flex;
-    gap: 10px;
+    gap: 0px !important;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .points span:nth-child(1),
 .points span:nth-child(3) {
-    padding: 10px 5px;
+    padding: 20px 10px;
     background-color: rgba(0, 0, 0, 0.082);
 }
 
+.points span:nth-child(2) {
+    padding: 20px 10px;
+}
+
 .points span:nth-child(3) {
-    padding: 10px 5px;
+    padding: 20px 10px;
     width: max-content;
 }
 
 .matchItem .matchInfo .player .right img {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
 }
 
 .matchItem .matchInfo .player .right span {
-    font-weight: 500;
+    font-weight: 500 !important;
+    font-size: 14px !important;
 }
 
 .matchItem {
@@ -326,4 +364,15 @@
 .doubleMatchItem .left .item {
     display: flex;
     gap: 5px;
+}
+
+.matchItem .matchInfo .player .right .err {
+    padding: 2px !important;
+    font-size: 10px !important;
+    color: white;
+    background-color: #7814ff;
+}
+
+.matchItem .matchInfo .player .right .gameScore {
+    color: rgb(59, 183, 221);
 }
