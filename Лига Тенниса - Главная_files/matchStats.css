@@ -551,6 +551,10 @@
     border: 1px rgba(0, 0, 0, 0.137) solid;
 }
 
+.matchItem .rules {
+    display: none !important;
+}
+
 .matchStats .stats .prevMatches .matches .matchItem .left {
     display: flex;
     flex-direction: column; 

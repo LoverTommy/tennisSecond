@@ -96,6 +96,14 @@ table tbody tr {
     .category {
         gap: 15px;
     }
+
+    .category {
+        width: 100%;
+    }
+
+    .category .filterItem {
+        width: max-content;
+    }
 }
 
 @media screen and (max-width: 500px) {
