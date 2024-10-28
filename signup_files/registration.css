@@ -85,7 +85,7 @@ input {
 }
 
 .agreement label {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .agreement input {
@@ -191,7 +191,8 @@ input {
 
 
 .name input,
-.fam input {
+.fam input,
+.logIn form .password input {
     padding: 8px 5px;
     width: 100%;
     outline: none;

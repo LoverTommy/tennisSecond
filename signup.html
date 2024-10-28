@@ -40,16 +40,16 @@
                 <div class="password" id="password">
                     <span>Пароль</span>
                     <div class="inputWrap">
-                        <input id="password" type="text" name="password">
-                        <img src="./login_files/aye.png" alt="#">
+                        <input class="inputPassword" id="password" type="password" name="password">
+                        <img class="showPassword" src="./login_files/aye.png" alt="#">
                     </div>
                 </div>
 
                 <div class="confirm">
                     <span>Подтверждение пароля</span>
                     <div class="inputWrap">
-                        <input type="text" name="confirmation">
-                        <img src="./login_files/aye.png" alt="#">
+                        <input class="inputPassword" type="password" name="confirmation">
+                        <img class="showPassword" src="./login_files/aye.png" alt="#">
                     </div>
                 </div>
                 
@@ -68,4 +68,17 @@
 
     <script src="./signup_files/logIn.js.download"></script>
 
+    <script>
+        const showPasswordButtons = document.getElementsByClassName('showPassword');
+
+        for(let i of showPasswordButtons) {
+            i.addEventListener('click', (eo)=>{
+                if(eo.target.parentNode.querySelector('.inputPassword').type == 'password') {
+                    eo.target.parentNode.querySelector('.inputPassword').type = 'text';
+                }else {
+                    eo.target.parentNode.querySelector('.inputPassword').type = 'password';
+                }
+            })
+        }
+    </script>
 </body></html>

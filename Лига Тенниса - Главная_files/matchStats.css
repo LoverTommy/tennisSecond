@@ -645,7 +645,7 @@
 
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right {
     display: flex;
-    gap: 20px;
+    gap: 10px !important;
     align-items: center;
 }
 
