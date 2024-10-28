@@ -1,0 +1,35 @@
+const logInForm = document.forms['logInForm'];
+
+const numberInput = logInForm.elements.number;
+
+
+//passwordInput = document.getElementById('passwordInput').value;
+
+
+numberError = document.getElementById('error');
+passwordError = document.getElementById('confirmError');
+
+logInForm.addEventListener('submit', (eo)=>{
+    //Кликабельность кнопки
+
+
+    if(numberError.style.display === 'inline' || numberInput.value.length === 0) {
+        eo.preventDefault();
+    }
+})
+
+// Исправлял сам функции
+
+numberInput.addEventListener('input', function () {
+    if (numberInput.value.length > 10) {
+        numberInput.value = numberInput.value.slice(0, 10);
+    }
+
+    if(numberInput.value.length !== 10) {
+        numberError.style.display = 'inline';
+    }
+    else {
+        numberError.style.display = 'none';
+    }
+
+})

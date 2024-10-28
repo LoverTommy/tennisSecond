@@ -21,6 +21,27 @@
 .burgerMenu .top .buttons {
     display: flex;
     gap: 15px;
+    align-items: center;
+}
+
+.burgerMenu .top .buttons a:first-child img {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 15px;
+}
+
+.burgerMenu .top .buttons a:first-child {
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 5px;
+    padding: 0px 5px;
+    object-fit: contain;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Montserrat';
+    font-size: 12px;
 }
 
 .burgerMenu .top .buttons img {
@@ -36,6 +57,11 @@
 .burgerMenu .top .buttons img:last-child {
     width: 25px;
     height: 25px;
+}
+
+.burgerMenu .top .buttons a {
+    height: max-content;
+    height: 37px;
 }
 
 .burgerMenu .top img:last-child {
@@ -95,6 +121,7 @@ header .menu a {
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 header .right {
@@ -103,8 +130,21 @@ header .right {
     cursor: pointer;
 }
 
+header .right a:first-child {
+    font-family: 'Montserrat';
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .right a:first-child img {
+    width: 20px;
+}
+
 header .right img {
     width: 30px;
+    cursor: pointer;
     height: 30px;
 }
 

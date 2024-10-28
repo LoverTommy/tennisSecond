@@ -39,15 +39,8 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 10px;
 }
 
-.matchItem {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    border: 1px rgba(23, 0, 33, 0.05);
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03);
-    border-radius: 16px;
-    padding: 15px 10px;
-    min-width: max-content !important
+.matchItem .matchTitle {
+    display: none !important;
 }
 
 .matchItem .peoples {
@@ -790,7 +783,10 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
+.matches .matchItem .player .left {
+    padding: 0 !important;
+    margin-left: 30px;
+}
 
 
 .h2hPopap {
@@ -883,8 +879,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .h2hPopap .wrapperPopap .players .left .image img,
 .h2hPopap .wrapperPopap .players .right .image img {
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 
 .h2hPopap .wrapperPopap .players .left .description,
@@ -1020,6 +1016,43 @@ h1,h2,h3,h4,h5,h6 {
     color: #7814ff;
     font-size: 18px;
 }
+
+.matches .matchItem {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 50px !important;
+    border: 1px rgba(0, 0, 0, 0.137) solid;
+}
+
+.matches .matchItem .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px 20px;
+}
+
+.matches .matchItem .left h5 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #7814ff;
+}
+
+.matches .matchItem .left h6 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.matches .matchItem .left span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.matches .matchItem hr {
+    margin: 0 !important;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
@@ -1342,6 +1375,41 @@ h1,h2,h3,h4,h5,h6 {
     .playerFilter .filterItem span {
         font-size: 12px;
     }
+
+    .matches .matchItem {
+        flex-direction: column !important;
+        border: none;
+        gap: 0 !important;
+        align-items: start;
+    }
+
+    .matches .matchItem .left {
+        padding: 0 !important;
+        padding-bottom: 10px !important;
+    }
+
+    .matches .matchItem .player .left {
+        margin: 0 !important;
+        padding: 0 !important;
+        padding-left: 14px !important;
+    }
+
+    .matches .matchItem .matchTitle {
+        border: 1px rgba(138, 130, 130, 0.137) solid !important;
+        display: flex !important;
+    }
+
+    .matches .matchItem .matchTitle h4 {
+        color: #7814ff;
+        font-size: 14px !important;
+    }
+
+    .matches .matchItem .matchTitle span {
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+
 }
 
 @media screen and (max-width: 400px) {

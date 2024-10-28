@@ -314,6 +314,34 @@
     font-size: 24px;
 }
 
+.filters .matchDays .matchDayButton {
+    position: relative;
+}
+
+.filters .matchDays .matchDayButton h5 {
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.filters .matchDays .matchDayButton p {
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #7814ff;
+    font-weight: 500;
+}
+
+.filters .matchDays .matchDayButton p img {
+    width: 15px;
+    height: 15px;
+}
+
 .matches {
     display: flex;
     flex-wrap: wrap;

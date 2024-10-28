@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://tennis-league.ru/signup -->
+<html lang="en" class=""><link type="text/css" id="dark-mode" rel="stylesheet" href="https://tennis-league.ru/signup"><style type="text/css" id="dark-mode-сustom-style"></style><style type="text/css" id="dark-mode-theme-changer-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./signup_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./signup_files/registration.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logIn">
+            <div class="title">
+                <h4>Регистрация</h4>
+            </div>
+            <form id="logInForm">
+                <input type="hidden" name="csrfmiddlewaretoken" value="XW8e1TphJzHY7cMlQpdx9iR1ddafc7VH89gE6QtkjCMgiRNBd6RIVUpOTIfVhDA8">
+                <div class="number">
+                    <div class="mask">
+                        <img id="number" src="./signup_files/numberIcon.png" alt="#">
+                        <span>+7</span>
+                    </div>
+                    <span>Номер телефона</span>
+                    <input name="number" type="number" max="9999999999">
+                    <span class="error" id="error">Введите корректный номер телефона</span>
+                </div>
+
+                <div class="name">
+                    <span>Имя</span>
+                    <input type="text">
+                </div>
+                
+                <div class="fam">
+                    <span>Фамилия</span>
+                    <input type="text">
+                </div>
+
+                <div class="password" id="password">
+                    <span>Пароль</span>
+                    <div class="inputWrap">
+                        <input id="password" type="text" name="password">
+                        <img src="./login_files/aye.png" alt="#">
+                    </div>
+                </div>
+
+                <div class="confirm">
+                    <span>Подтверждение пароля</span>
+                    <div class="inputWrap">
+                        <input type="text" name="confirmation">
+                        <img src="./login_files/aye.png" alt="#">
+                    </div>
+                </div>
+                
+                <button formmethod="post">Регистрация</button>
+
+                <div class="agreement">
+                    <input type="checkbox" name="agreement">
+                    <label for="agreement">Даю согласие на обработку персональных данных</label>
+                </div>
+            </form>
+
+        </div>
+        <h5>Зарегистрованы?</h5>
+        <a class="signup-link" href="https://tennis-league.ru/login">Войти</a>
+    </div>
+
+    <script src="./signup_files/logIn.js.download"></script>
+
+</body></html>

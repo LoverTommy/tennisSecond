@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://tennis-league.ru/login -->
+<html lang="en" class=""><link type="text/css" id="dark-mode" rel="stylesheet" href="https://tennis-league.ru/login"><style type="text/css" id="dark-mode-сustom-style"></style><style type="text/css" id="dark-mode-theme-changer-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./login_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./login_files/logIn.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logIn">
+            <div class="title">
+                <h4>Вход</h4>
+            </div>
+            <form id="logInForm">
+                <input type="hidden" name="csrfmiddlewaretoken" value="rKo4dSNyOm9MQLVoHIp7szHxCP7hqbJrCXwuiPRBope41qWE4p3iebfkikcXvHoS">
+                <div class="number">
+                    <div class="mask">
+                        <img id="number" src="./login_files/numberIcon.png" alt="#">
+                        <span>+7</span>
+                    </div>
+                    <span>Номер телефона</span>
+                    <input name="number" type="number">
+                    <span class="error" id="error">Введите корректный номер телефона</span>
+                </div>
+                <div class="password">
+                    <span>Пароль</span>
+                    <div class="inputWrap">
+                        <input id="password" type="text" name="password">
+                        <img src="./login_files/aye.png" alt="#">
+                    </div>
+                </div>
+                <button formmethod="post">Войти</button>
+
+                <a class="forgotPassword" href="#">Забыли пароль?</a>
+            </form>
+       
+        </div>
+        <h5>Не зарегистрованы?</h5>
+        <a class="signup-link" href="https://tennis-league.ru/signup">Регистрация</a>
+    </div>
+
+    <script src="./login_files/logIn.js.download"></script>
+    
+
+</body></html>
